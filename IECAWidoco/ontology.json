@@ -2075,31 +2075,31 @@
   "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Delfina Sol Pandiani"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@value" : "RICO Ontology - Related Interpretations of Cultural Objects"
+    "@value" : "IECA Ontology - Interpretative Encounters with Cultural Artifacts"
   }, {
     "@value" : "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "RICO Ontology is based on DOLCE DnS Ultralite, and was specifically developed for the formal representation of information surrounding the interpretations of cultural objects."
+    "@value" : "IECA Ontology is based on DOLCE DnS Ultralite, and was specifically developed for the formal representation of information surrounding the interpretative encounters with cultural objects."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "RICO (Related Interpretations of Cultural Objects)"
+    "@value" : "IECA (Interpretative Encounters with Cultural Artifacts)"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://rico-ontology.github.io/rico_dul.owl"
+    "@id" : "https://ieca-ontology.github.io/ieca_dul.owl"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.0"
   } ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl#Evoker",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#Evoker",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A special task part of an interpreted role of cultural objects as meaning carriers. Used for cultural objects that in their interpreted role evoke a concept. For example, evoker of a sentiment (such as fear, lust, anger, etc.), of an abstract concept (such as, freedom, love, or justice), or of a concrete concept (tree, house, shoe)."
@@ -2111,7 +2111,7 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
   } ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#IntangibleCulturalObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person."
@@ -2126,10 +2126,10 @@
     "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
   } ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#InterpretativeEncounter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A type of action event in which one person participates as interpreter and one object participates as meaning carrier, and executes tasks as defined in a description (interpretation).\n\nThe definition of this class was deemed necessary as it is central to the domain that RICO aims to formalize. Having this class allows for further specification down the road for the kinds of interpretative encounters that may take place (for example, mediated or unmediated experiences in museums, physical or virtual encounters, etc.)"
+    "@value" : "A type of action event in which one person participates as interpreter and one object participates as meaning carrier, and executes tasks as defined in a description (interpretation).\n\nThe definition of this class was deemed necessary as it is central to the domain that ieca aims to formalize. Having this class allows for further specification down the road for the kinds of interpretative encounters that may take place (for example, mediated or unmediated experiences in museums, physical or virtual encounters, etc.)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Interpretative Encounter"
@@ -2138,7 +2138,7 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
   } ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl#InterpretedRole",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#InterpretedRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This subclass of the Role class was specifically created to designate roles assigned to (mostly) cultural objects within the interpretative encounter by an interpreter. That is, interpreted roles are roles that are solely defined by the interpretation criterion conceptualized by a Person (eg., \"carrier of meaning\")"
@@ -2150,10 +2150,10 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
   } ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl#Rights",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#Rights",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl#Sentiment",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#Sentiment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Sentiments are concepts such as fear, pain, laughter, happiness, or lust, which may be the object of the evoking task of a cultural object interpreted as a meaning carrier."
@@ -2165,7 +2165,7 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
   } ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#TangibleCulturalObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person."
@@ -2180,7 +2180,7 @@
     "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
   } ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#isEvokedbyTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relation between a Concept and the Task that evokes it."
@@ -2191,22 +2191,22 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://rico-ontology.github.io/rico_dul.owl#Evoker"
+    "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#Evoker"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://rico-ontology.github.io/rico_dul.owl#taskEvokes"
+    "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#taskEvokes"
   } ]
 }, {
-  "@id" : "https://rico-ontology.github.io/rico_dul.owl#taskEvokes",
+  "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#taskEvokes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relation between an Evoker Task and a Concept (such as a sentiment, a high level abstract concept, etc.)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://rico-ontology.github.io/rico_dul.owl#Evoker"
+    "@id" : "https://ieca-ontology.github.io/ieca_dul.owl#Evoker"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "task evokes"
@@ -2221,7 +2221,7 @@
   "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape.\n\nIn RICO, this class and its descendants are reused to represent the cultural objects that are the objects of interpretation, mainly so that the knowledge bases emerging from its use can be matched to ArCo and other resources in a way that augments the amount of knowledge available of such objects."
+    "@value" : "This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape.\n\nIn ieca, this class and its descendants are reused to represent the cultural objects that are the objects of interpretation, mainly so that the knowledge bases emerging from its use can be matched to ArCo and other resources in a way that augments the amount of knowledge available of such objects."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://dati.beniculturali.it/lodview-arco-onto/ontology/arco"
@@ -2236,7 +2236,7 @@
   "@id" : "https://w3id.org/arco/ontology/context-description/Interpretation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "This class represents a situation in which pieces of information related to an object (e.g.: a cultural property) are detected and recorded by an agent, based on a specific source or motivation (e.g.:the authorship attribution, commission, etc.)\n\nIn RICO, an interpretation is the result of applying the interpretation criterion to a state of affairs (the tangible cultural object). As such, the interpretation is the resulting attribution of meaning to an object during an interpretative event."
+    "@value" : "This class represents a situation in which pieces of information related to an object (e.g.: a cultural property) are detected and recorded by an agent, based on a specific source or motivation (e.g.:the authorship attribution, commission, etc.)\n\nIn ieca, an interpretation is the result of applying the interpretation criterion to a state of affairs (the tangible cultural object). As such, the interpretation is the resulting attribution of meaning to an object during an interpretative event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/arco/ontology/context-description"
@@ -2251,7 +2251,7 @@
   "@id" : "https://w3id.org/arco/ontology/context-description/InterpretationCriterion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "This class represents the criterion that motivated an interpretation.\n\nIn RICO, an interpretation criterion is what defines the interpreted role of a cultural object and the tasks that it fulfills under that role. For example, an interpretation may define a cultural object’s role as meaning carrier, which includes the task of evoking the sentiment of happiness, the task of evoking the abstract concept of freedom, and the task of evoking the concrete place “Paris”. An interpretation criterion is conceptualized by a Person, and can be expressed as an information object (such as a text) that is realized in some way (like a txt file)."
+    "@value" : "This class represents the criterion that motivated an interpretation.\n\nIn ieca, an interpretation criterion is what defines the interpreted role of a cultural object and the tasks that it fulfills under that role. For example, an interpretation may define a cultural object’s role as meaning carrier, which includes the task of evoking the sentiment of happiness, the task of evoking the abstract concept of freedom, and the task of evoking the concrete place “Paris”. An interpretation criterion is conceptualized by a Person, and can be expressed as an information object (such as a text) that is realized in some way (like a txt file)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/arco/ontology/context-description"

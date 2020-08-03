@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://rico-ontology.github.io/rico_dul.owl#"
-     xml:base="https://rico-ontology.github.io/rico_dul.owl"
+<rdf:RDF xmlns="https://ieca-ontology.github.io/ieca_dul.owl#"
+     xml:base="https://ieca-ontology.github.io/ieca_dul.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -8,20 +8,20 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:rico_dul="https://rico-ontology.github.io/rico_dul.owl#">
-    <owl:Ontology rdf:about="https://rico-ontology.github.io/rico_dul.owl">
-        <owl:versionIRI rdf:resource="https://rico-ontology.github.io/rico_dul.owl"/>
+     xmlns:ieca_dul="https://ieca-ontology.github.io/ieca_dul.owl#">
+    <owl:Ontology rdf:about="https://ieca-ontology.github.io/ieca_dul.owl">
+        <owl:versionIRI rdf:resource="https://ieca-ontology.github.io/ieca_dul.owl"/>
         <dc:creator>Delfina Sol Pandiani</dc:creator>
-        <terms:title>RICO Ontology - Related Interpretations of Cultural Objects</terms:title>
+        <terms:title>IECA Ontology - Interpretative Encounters with Cultural Artifacts</terms:title>
         <terms:title>This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</terms:title>
-        <rdfs:comment>RICO Ontology is based on DOLCE DnS Ultralite, and was specifically developed for the formal representation of information surrounding the interpretations of cultural objects.</rdfs:comment>
-        <rdfs:label>RICO (Related Interpretations of Cultural Objects)</rdfs:label>
+        <rdfs:comment>IECA Ontology is based on DOLCE DnS Ultralite, and was specifically developed for the formal representation of information surrounding the interpretations of cultural objects.</rdfs:comment>
+        <rdfs:label>IECA (Interpretative Encounters with Cultural Artifacts)</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -30,7 +30,7 @@
      -->
 
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
@@ -39,45 +39,45 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
     </owl:AnnotationProperty>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
-    
+
 
 
     <!-- http://www.w3.org/2002/07/owl#versionInfo -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
-    
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#Rights -->
+
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#Rights -->
 
 
-    <owl:AnnotationProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#Rights"/>
-    
+    <owl:AnnotationProperty rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#Rights"/>
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -86,17 +86,17 @@
      -->
 
 
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
 
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -105,7 +105,7 @@
      -->
 
 
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes -->
@@ -120,7 +120,7 @@
         <rdfs:isDefinedBy>http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl</rdfs:isDefinedBy>
         <rdfs:label>assumes</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes -->
@@ -135,7 +135,7 @@
         <rdfs:isDefinedBy>http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl</rdfs:isDefinedBy>
         <rdfs:label>believes</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy -->
@@ -150,7 +150,7 @@
         <rdfs:isDefinedBy>http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl</rdfs:isDefinedBy>
         <rdfs:label>is assumed by</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy -->
@@ -164,7 +164,7 @@
         <rdfs:isDefinedBy>http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl</rdfs:isDefinedBy>
         <rdfs:label>is believed by</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith -->
@@ -182,7 +182,7 @@ A catch-all object property, useful for alignment and querying purposes.
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label>associated with</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies -->
@@ -200,7 +200,7 @@ A relation between a Concept and an Entity, e.g. the Role &apos;student&apos; cl
         <rdfs:label xml:lang="it">classifica</rdfs:label>
         <rdfs:label xml:lang="en">classifies</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes -->
@@ -218,7 +218,7 @@ A relation stating that an Agent is internally representing a SocialObject: situ
         <rdfs:label xml:lang="en">conceptualizes</rdfs:label>
         <rdfs:label xml:lang="it">concettualizza</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines -->
@@ -236,7 +236,7 @@ A relation between a Description and a Concept, e.g. a Workflow for a government
         <rdfs:label xml:lang="en">defines</rdfs:label>
         <rdfs:label xml:lang="it">definisce</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole -->
@@ -254,7 +254,7 @@ A relation between a description and a role, e.g. the recipe for a cake defines 
         <rdfs:label xml:lang="en">defines role</rdfs:label>
         <rdfs:label xml:lang="it">definisce il ruolo</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask -->
@@ -272,7 +272,7 @@ A relation between a description and a task, e.g. the recipe for a cake defines 
         <rdfs:label xml:lang="en">defines task</rdfs:label>
         <rdfs:label xml:lang="it">definisce il task</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes -->
@@ -290,7 +290,7 @@ The relation between a Description and an Entity : a Description gives a unity t
         <rdfs:label xml:lang="en">describes</rdfs:label>
         <rdfs:label xml:lang="it">descrive</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses -->
@@ -311,7 +311,7 @@ This is a large comment field for those who want to investigate the different us
         <rdfs:label xml:lang="it">esprime</rdfs:label>
         <rdfs:label xml:lang="en">expresses</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation -->
@@ -329,7 +329,7 @@ A generic, relative spatial location, holding between any entities. E.g. &apos;t
         <rdfs:label xml:lang="it">ha localizzazione</rdfs:label>
         <rdfs:label xml:lang="en">has location</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant -->
@@ -347,7 +347,7 @@ A relation between an object and a process, e.g. &apos;John took part in the dis
         <rdfs:label xml:lang="it">ha come partecipante</rdfs:label>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality -->
@@ -365,7 +365,7 @@ A relation between entities and qualities, e.g. &apos;Dmitri&apos;s skin is yell
         <rdfs:label xml:lang="it">ha qualità</rdfs:label>
         <rdfs:label xml:lang="en">has quality</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion -->
@@ -383,7 +383,7 @@ A relation between entities and regions, e.g. &apos;the number of wheels of that
         <rdfs:label xml:lang="it">ha attributo</rdfs:label>
         <rdfs:label xml:lang="en">has region</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole -->
@@ -401,7 +401,7 @@ A relation between an object and a role, e.g. the person &apos;John&apos; has ro
         <rdfs:label xml:lang="it">ha ruolo</rdfs:label>
         <rdfs:label xml:lang="en">has role</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting -->
@@ -419,7 +419,7 @@ A relation between entities and situations, e.g. &apos;this morning I&apos;ve pr
         <rdfs:label xml:lang="en">has setting</rdfs:label>
         <rdfs:label xml:lang="it">è nel contesto di</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask -->
@@ -437,7 +437,7 @@ A relation between roles and tasks, e.g. &apos;students have the duty of giving 
         <rdfs:label xml:lang="it">ha come obiettivo</rdfs:label>
         <rdfs:label xml:lang="en">has task</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval -->
@@ -455,7 +455,7 @@ The generic relation between events and time intervals.
         <rdfs:label xml:lang="it">ha intervallo temporale</rdfs:label>
         <rdfs:label xml:lang="en">has time interval</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent -->
@@ -473,7 +473,7 @@ A relation between situations and persons, e.g. &apos;this morning I&apos;ve pre
         <rdfs:label xml:lang="it">include l&apos;agente</rdfs:label>
         <rdfs:label xml:lang="en">includes agent</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent -->
@@ -491,7 +491,7 @@ A relation between situations and events, e.g. &apos;this morning I&apos;ve prep
         <rdfs:label xml:lang="it">include l&apos;evento</rdfs:label>
         <rdfs:label xml:lang="en">includes event</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject -->
@@ -509,7 +509,7 @@ A relation between situations and objects, e.g. &apos;this morning I&apos;ve pre
         <rdfs:label xml:lang="it">include l&apos;oggetto</rdfs:label>
         <rdfs:label xml:lang="en">includes object</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime -->
@@ -527,7 +527,7 @@ A relation between situations and time intervals, e.g. &apos;this morning I&apos
         <rdfs:label xml:lang="it">include tempo</rdfs:label>
         <rdfs:label xml:lang="en">includes time</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent -->
@@ -543,7 +543,7 @@ A relation between situations and time intervals, e.g. &apos;this morning I&apos
         <rdfs:label xml:lang="it">coinvolge agente</rdfs:label>
         <rdfs:label xml:lang="en">involves agent</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn -->
@@ -557,7 +557,7 @@ A relation between situations and time intervals, e.g. &apos;this morning I&apos
         <rdfs:label xml:lang="en">is agent included in</rdfs:label>
         <rdfs:label xml:lang="it">è un agente nel contesto di</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn -->
@@ -572,7 +572,7 @@ A relation between situations and time intervals, e.g. &apos;this morning I&apos
         <rdfs:label xml:lang="en">is agent involved in</rdfs:label>
         <rdfs:label xml:lang="it">è un agente coinvolto in</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy -->
@@ -589,7 +589,7 @@ A relation between a Concept and an Entity, e.g. &apos;John is considered a typi
         <rdfs:label xml:lang="en">is classified by</rdfs:label>
         <rdfs:label xml:lang="it">è classificato da</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn -->
@@ -607,7 +607,7 @@ A more generic relation holding between a Description and a Concept. In order to
         <rdfs:label xml:lang="en">is concept used in</rdfs:label>
         <rdfs:label xml:lang="it">è un concetto usato in</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy -->
@@ -624,7 +624,7 @@ A relation stating that an Agent is internally representing a Description . E.g.
         <rdfs:label xml:lang="en">is conceptualized by</rdfs:label>
         <rdfs:label xml:lang="it">è concettualizzato da</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn -->
@@ -641,7 +641,7 @@ A relation between a Description and a Concept, e.g. a Workflow for a government
         <rdfs:label xml:lang="en">is defined in</rdfs:label>
         <rdfs:label xml:lang="it">è definito in</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy -->
@@ -658,7 +658,7 @@ The relation between an Entity and a Description: a Description gives a unity to
         <rdfs:label xml:lang="en">is described by</rdfs:label>
         <rdfs:label xml:lang="it">è descritto da</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn -->
@@ -672,7 +672,7 @@ The relation between an Entity and a Description: a Description gives a unity to
         <rdfs:label xml:lang="en">is event included in</rdfs:label>
         <rdfs:label xml:lang="it">è un evento nel contesto di</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy -->
@@ -689,7 +689,7 @@ A relation between a dul:SocialObject (the &apos;meaning&apos;) and a dul:Inform
         <rdfs:label xml:lang="en">is expressed by</rdfs:label>
         <rdfs:label xml:lang="it">è espresso da</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf -->
@@ -706,7 +706,7 @@ A generic, relative localization, holding between any entities. E.g. &apos;Rome 
         <rdfs:label xml:lang="en">is location of</rdfs:label>
         <rdfs:label xml:lang="it">è una localizzazione di</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn -->
@@ -720,7 +720,7 @@ A generic, relative localization, holding between any entities. E.g. &apos;Rome 
         <rdfs:label xml:lang="en">is object included in</rdfs:label>
         <rdfs:label xml:lang="it">è un oggetto nel contesto di</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn -->
@@ -737,7 +737,7 @@ A relation between an object and a process, e.g. &apos;John took part in the dis
         <rdfs:label xml:lang="en">is participant in</rdfs:label>
         <rdfs:label xml:lang="it">è un partecipante a</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf -->
@@ -754,7 +754,7 @@ A relation between entities and qualities, e.g. &apos;Dmitri&apos;s skin is yell
         <rdfs:label xml:lang="en">is quality of</rdfs:label>
         <rdfs:label xml:lang="it">è una qualità di</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy -->
@@ -772,7 +772,7 @@ A relation between an information realization and an information object, e.g. th
         <rdfs:label xml:lang="en">is realized by</rdfs:label>
         <rdfs:label xml:lang="it">è realizzato da</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor -->
@@ -789,7 +789,7 @@ A relation between entities and regions, e.g. &apos;the color of my car is red&a
         <rdfs:label xml:lang="en">is region for</rdfs:label>
         <rdfs:label xml:lang="it">è una regione di</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept -->
@@ -808,7 +808,7 @@ Any relation between concepts, e.g. superordinated, conceptual parthood, having 
         <rdfs:label xml:lang="en">is related to concept</rdfs:label>
         <rdfs:label xml:lang="it">è associato al concetto</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn -->
@@ -825,7 +825,7 @@ A relation between a description and a role, e.g. the role &apos;Ingredient&apos
         <rdfs:label xml:lang="en">is role defined in</rdfs:label>
         <rdfs:label xml:lang="it">è un ruolo definito in</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf -->
@@ -842,7 +842,7 @@ A relation between an object and a role, e.g. &apos;student&apos; is the role of
         <rdfs:label xml:lang="en">is role of</rdfs:label>
         <rdfs:label xml:lang="it">è un ruolo di</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy -->
@@ -859,7 +859,7 @@ A relation between a Situation and a Description, e.g. the execution of a Plan s
         <rdfs:label xml:lang="en">is satisfied by</rdfs:label>
         <rdfs:label xml:lang="it">è soddisfatta da</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor -->
@@ -876,7 +876,7 @@ A relation between situations and entities, e.g. &apos;this morning I&apos;ve pr
         <rdfs:label xml:lang="it">include</rdfs:label>
         <rdfs:label xml:lang="en">is setting for</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn -->
@@ -893,7 +893,7 @@ A relation between a description and a task, e.g. the task &apos;boil&apos; is d
         <rdfs:label xml:lang="en">is task defined in</rdfs:label>
         <rdfs:label xml:lang="it">è un task definito in</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf -->
@@ -910,7 +910,7 @@ A relation between roles and tasks, e.g. &apos;students have the duty of giving 
         <rdfs:label xml:lang="en">is task of</rdfs:label>
         <rdfs:label xml:lang="it">è un obiettivo per</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn -->
@@ -924,7 +924,7 @@ A relation between roles and tasks, e.g. &apos;students have the duty of giving 
         <rdfs:label xml:lang="en">is time included in</rdfs:label>
         <rdfs:label xml:lang="it">è un tempo nel contesto di</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf -->
@@ -941,7 +941,7 @@ The generic relation between time intervals and events.
         <rdfs:label xml:lang="it">intervallo temporale di</rdfs:label>
         <rdfs:label xml:lang="en">is time interval of</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes -->
@@ -958,7 +958,7 @@ A relation between an information realization and an information object, e.g. th
         <rdfs:label xml:lang="en">realizes</rdfs:label>
         <rdfs:label xml:lang="it">realizza</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept -->
@@ -975,34 +975,34 @@ A generic relation holding between a Description and a Concept. In order to be u
         <rdfs:label xml:lang="it">usa il concetto</rdfs:label>
         <rdfs:label xml:lang="en">uses concept</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask -->
+
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#isEvokedbyTask -->
 
 
-    <owl:ObjectProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask">
+    <owl:ObjectProperty rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#isEvokedbyTask">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
-        <owl:inverseOf rdf:resource="https://rico-ontology.github.io/rico_dul.owl#taskEvokes"/>
+        <owl:inverseOf rdf:resource="https://ieca-ontology.github.io/ieca_dul.owl#taskEvokes"/>
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
-        <rdfs:range rdf:resource="https://rico-ontology.github.io/rico_dul.owl#Evoker"/>
+        <rdfs:range rdf:resource="https://ieca-ontology.github.io/ieca_dul.owl#Evoker"/>
         <rdfs:comment>Relation between a Concept and the Task that evokes it.</rdfs:comment>
         <rdfs:comment>is evoked by task</rdfs:comment>
     </owl:ObjectProperty>
-    
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#taskEvokes -->
+
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#taskEvokes -->
 
 
-    <owl:ObjectProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#taskEvokes">
+    <owl:ObjectProperty rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#taskEvokes">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
-        <rdfs:domain rdf:resource="https://rico-ontology.github.io/rico_dul.owl#Evoker"/>
+        <rdfs:domain rdf:resource="https://ieca-ontology.github.io/ieca_dul.owl#Evoker"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
         <rdfs:comment>Relation between an Evoker Task and a Concept (such as a sentiment, a high level abstract concept, etc.).</rdfs:comment>
         <rdfs:label>task evokes</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion -->
@@ -1016,7 +1016,7 @@ A generic relation holding between a Description and a Concept. In order to be u
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
         <rdfs:label>has interpretation criterion</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf -->
@@ -1030,10 +1030,10 @@ A generic relation holding between a Description and a Concept. In order to be u
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
         <rdfs:label>is interpretation criterion of</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -1042,7 +1042,7 @@ A generic relation holding between a Description and a Concept. In order to be u
      -->
 
 
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue -->
@@ -1057,7 +1057,7 @@ A datatype property that encodes values from a datatype for an Entity. There are
         <rdfs:label xml:lang="it">ha valore</rdfs:label>
         <rdfs:label xml:lang="en">has data value</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate -->
@@ -1074,7 +1074,7 @@ A datatype property that encodes values from xsd:dateTime for an Event; a same E
         <rdfs:label xml:lang="it">evento ha data</rdfs:label>
         <rdfs:label xml:lang="en">has event date</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate -->
@@ -1091,7 +1091,7 @@ A datatype property that encodes values from xsd:dateTime for a TimeInterval; a 
         <rdfs:label xml:lang="en">has interval date</rdfs:label>
         <rdfs:label xml:lang="it">intervallo ha data</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue -->
@@ -1107,10 +1107,10 @@ A datatype property that encodes values for a Region, e.g. a float for the Regio
         <rdfs:label xml:lang="en">has region data value</rdfs:label>
         <rdfs:label xml:lang="it">regione ha valore</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -1119,7 +1119,7 @@ A datatype property that encodes values for a Region, e.g. a float for the Regio
      -->
 
 
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract -->
@@ -1136,7 +1136,7 @@ Any Entity that cannot be located in space-time. E.g. mathematical entities: for
         <rdfs:label xml:lang="en">Abstract</rdfs:label>
         <rdfs:label xml:lang="it">Astratto</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action -->
@@ -1157,7 +1157,7 @@ An Event with at least one Agent that isParticipantIn it, and that executes a Ta
         <rdfs:label xml:lang="en">Action</rdfs:label>
         <rdfs:label xml:lang="it">Azione</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent -->
@@ -1175,7 +1175,7 @@ Any agentive Object , either physical (e.g. a whale, a robot, an oak), or social
         <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:label xml:lang="it">Agente</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept -->
@@ -1199,7 +1199,7 @@ A Concept is a SocialObject, and isDefinedIn some Description; once defined, a C
         <rdfs:label xml:lang="en">Concept</rdfs:label>
         <rdfs:label xml:lang="it">Concetto</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description -->
@@ -1216,7 +1216,7 @@ A Description is a SocialObject that represents a conceptualization. It can be t
         <rdfs:label xml:lang="en">Description</rdfs:label>
         <rdfs:label xml:lang="it">Descrizione</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity -->
@@ -1230,7 +1230,7 @@ Anything: real, possible, or imaginary, which some modeller wants to talk about 
         <rdfs:label xml:lang="en">Entity</rdfs:label>
         <rdfs:label xml:lang="it">Entità</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
@@ -1256,7 +1256,7 @@ Anything: real, possible, or imaginary, which some modeller wants to talk about 
         <rdfs:label xml:lang="en">Event</rdfs:label>
         <rdfs:label xml:lang="it">Evento</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType -->
@@ -1278,7 +1278,7 @@ A Concept that classifies an Event . An event type describes how an Event should
         <rdfs:label xml:lang="en">Event Type</rdfs:label>
         <rdfs:label xml:lang="it">Tipo di evento</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity -->
@@ -1292,7 +1292,7 @@ A piece of information, be it concretely realized or not.
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label>Information Entity</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject -->
@@ -1309,7 +1309,7 @@ A piece of information, such as a musical composition, a text, a word, a picture
         <rdfs:label xml:lang="en">Information Object</rdfs:label>
         <rdfs:label xml:lang="it">Oggetto informativo</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization -->
@@ -1330,7 +1330,7 @@ A concrete realization of an InformationObject, e.g. the written document contai
         <rdfs:label xml:lang="en">Information Realization</rdfs:label>
         <rdfs:label xml:lang="it">Informazione concreta</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson -->
@@ -1345,7 +1345,7 @@ A person in the physical commonsense intuition: &apos;have you seen that person 
         <rdfs:label xml:lang="en">Natural Person</rdfs:label>
         <rdfs:label xml:lang="it">Persona fisica</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object -->
@@ -1378,7 +1378,7 @@ Any physical, social, or mental object, or a substance. Following DOLCE Full, ob
         <rdfs:label xml:lang="en">Object</rdfs:label>
         <rdfs:label xml:lang="it">Oggetto</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person -->
@@ -1393,7 +1393,7 @@ Persons in commonsense intuition, which does not apparently distinguish between 
         <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:label>Persona {it}</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute -->
@@ -1410,7 +1410,7 @@ Physical value of a physical object, e.g. density, color, etc.
         <rdfs:label xml:lang="it">Caratteristica fisica</rdfs:label>
         <rdfs:label xml:lang="en">Physical Attribute</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place -->
@@ -1431,7 +1431,7 @@ A location, in a very generic sense: a political geographic entity (Roma, Lesoth
         <rdfs:label xml:lang="it">Luogo</rdfs:label>
         <rdfs:label xml:lang="en">Place</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality -->
@@ -1439,14 +1439,14 @@ A location, in a very generic sense: a political geographic entity (Roma, Lesoth
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
-        <rdfs:comment>rdfs:comment &quot;Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
-From the design viewpoint, the Quality-Region distinction is useful only when individual aspects of an Entity are considered in a domain of discourse. 
-For example, in an automotive context, it would be irrelevant to consider the aspects of car windows for a specific car, unless the factory wants to check a specific window against design parameters (anomaly detection). 
+        <rdfs:comment>rdfs:comment &quot;Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region.
+From the design viewpoint, the Quality-Region distinction is useful only when individual aspects of an Entity are considered in a domain of discourse.
+For example, in an automotive context, it would be irrelevant to consider the aspects of car windows for a specific car, unless the factory wants to check a specific window against design parameters (anomaly detection).
 On the other hand, in an antiques context, the individual aspects for a specific piece of furniture are a major focus of attention, and may constitute the actual added value, because the design parameters for old furniture are often not fixed, and may not be viewed as &apos;anomalies&apos;.&quot;^^xsd:string</rdfs:comment>
         <rdfs:isDefinedBy>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</rdfs:isDefinedBy>
         <rdfs:label>Quality</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region -->
@@ -1461,7 +1461,7 @@ Any region in a dimensional space (a dimensional space is a maximal Region), whi
         <rdfs:label xml:lang="en">Region</rdfs:label>
         <rdfs:label xml:lang="it">Regione</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role -->
@@ -1480,7 +1480,7 @@ Any region in a dimensional space (a dimensional space is a maximal Region), whi
         <rdfs:label xml:lang="en">Role</rdfs:label>
         <rdfs:label xml:lang="it">Ruolo</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation -->
@@ -1495,7 +1495,7 @@ A view, consistent with (&apos;satisfying&apos;) a Description, on a set of enti
         <rdfs:label xml:lang="en">Situation</rdfs:label>
         <rdfs:label xml:lang="it">Situazione</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject -->
@@ -1516,7 +1516,7 @@ Any Object that exists only within some communication Event, in which at least o
         <rdfs:label xml:lang="it">Oggetto sociale</rdfs:label>
         <rdfs:label xml:lang="en">Social Object</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion -->
@@ -1532,7 +1532,7 @@ Any Region in a dimensional space that is used to localize an Entity ; i.e., it 
         <rdfs:label xml:lang="it">Regione di spazio</rdfs:label>
         <rdfs:label xml:lang="en">Space Region</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task -->
@@ -1559,7 +1559,7 @@ An EventType that classifies an Action to be executed. For example, reaching a d
         <rdfs:label xml:lang="en">Task</rdfs:label>
         <rdfs:label xml:lang="it">Task</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval -->
@@ -1574,84 +1574,84 @@ Any Region in a dimensional space that aims at representing time.
         <rdfs:label xml:lang="it">Intervallo di tempo</rdfs:label>
         <rdfs:label xml:lang="en">Time Interval</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
 
     <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-    
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#Evoker -->
+
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#Evoker -->
 
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#Evoker">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#Evoker">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
         <rdfs:comment>A special task part of an interpreted role of cultural objects as meaning carriers. Used for cultural objects that in their interpreted role evoke a concept. For example, evoker of a sentiment (such as fear, lust, anger, etc.), of an abstract concept (such as, freedom, love, or justice), or of a concrete concept (tree, house, shoe).</rdfs:comment>
         <rdfs:label>Evoker</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject -->
+
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#IntangibleCulturalObject -->
 
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#IntangibleCulturalObject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/CulturalProperty"/>
         <rdfs:comment>This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person.</rdfs:comment>
         <rdfs:label>Intangible Cultural Object</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/arco/ontology/arco/IntangibleCulturalProperty"/>
     </owl:Class>
-    
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter -->
+
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#InterpretativeEncounter -->
 
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#InterpretativeEncounter">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
         <rdfs:comment>A type of action event in which one person participates as interpreter and one object participates as meaning carrier, and executes tasks as defined in a description (interpretation).
 
-The definition of this class was deemed necessary as it is central to the domain that RICO aims to formalize. Having this class allows for further specification down the road for the kinds of interpretative encounters that may take place (for example, mediated or unmediated experiences in museums, physical or virtual encounters, etc.)</rdfs:comment>
+The definition of this class was deemed necessary as it is central to the domain that ieca aims to formalize. Having this class allows for further specification down the road for the kinds of interpretative encounters that may take place (for example, mediated or unmediated experiences in museums, physical or virtual encounters, etc.)</rdfs:comment>
         <rdfs:label>Interpretative Encounter</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#InterpretedRole -->
+
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#InterpretedRole -->
 
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#InterpretedRole">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#InterpretedRole">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
         <rdfs:comment>This subclass of the Role class was specifically created to designate roles assigned to (mostly) cultural objects within the interpretative encounter by an interpreter. That is, interpreted roles are roles that are solely defined by the interpretation criterion conceptualized by a Person (eg., &quot;carrier of meaning&quot;)</rdfs:comment>
         <rdfs:label>Interpreted Role</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#Sentiment -->
+
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#Sentiment -->
 
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#Sentiment">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#Sentiment">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
         <rdfs:comment>Sentiments are concepts such as fear, pain, laughter, happiness, or lust, which may be the object of the evoking task of a cultural object interpreted as a meaning carrier.</rdfs:comment>
         <rdfs:label>Sentiment</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject -->
+
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#TangibleCulturalObject -->
 
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#TangibleCulturalObject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/CulturalProperty"/>
         <rdfs:comment>This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person.</rdfs:comment>
         <rdfs:label>Tangible Cultural Object</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/arco/ontology/arco/CulturalProperty -->
@@ -1661,11 +1661,11 @@ The definition of this class was deemed necessary as it is central to the domain
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
         <rdfs:comment>This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape.
 
-In RICO, this class and its descendants are reused to represent the cultural objects that are the objects of interpretation, mainly so that the knowledge bases emerging from its use can be matched to ArCo and other resources in a way that augments the amount of knowledge available of such objects.</rdfs:comment>
+In ieca, this class and its descendants are reused to represent the cultural objects that are the objects of interpretation, mainly so that the knowledge bases emerging from its use can be matched to ArCo and other resources in a way that augments the amount of knowledge available of such objects.</rdfs:comment>
         <rdfs:isDefinedBy>http://dati.beniculturali.it/lodview-arco-onto/ontology/arco</rdfs:isDefinedBy>
         <rdfs:label>Cultural Property</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/arco/ontology/context-description/Interpretation -->
@@ -1675,11 +1675,11 @@ In RICO, this class and its descendants are reused to represent the cultural obj
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
         <rdfs:comment>This class represents a situation in which pieces of information related to an object (e.g.: a cultural property) are detected and recorded by an agent, based on a specific source or motivation (e.g.:the authorship attribution, commission, etc.)
 
-In RICO, an interpretation is the result of applying the interpretation criterion to a state of affairs (the tangible cultural object). As such, the interpretation is the resulting attribution of meaning to an object during an interpretative event.</rdfs:comment>
+In ieca, an interpretation is the result of applying the interpretation criterion to a state of affairs (the tangible cultural object). As such, the interpretation is the resulting attribution of meaning to an object during an interpretative event.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
         <rdfs:label>Interpretation</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/arco/ontology/context-description/InterpretationCriterion -->
@@ -1689,7 +1689,7 @@ In RICO, an interpretation is the result of applying the interpretation criterio
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
         <rdfs:comment>This class represents the criterion that motivated an interpretation.
 
-In RICO, an interpretation criterion is what defines the interpreted role of a cultural object and the tasks that it fulfills under that role. For example, an interpretation may define a cultural object’s role as meaning carrier, which includes the task of evoking the sentiment of happiness, the task of evoking the abstract concept of freedom, and the task of evoking the concrete place “Paris”. An interpretation criterion is conceptualized by a Person, and can be expressed as an information object (such as a text) that is realized in some way (like a txt file).</rdfs:comment>
+In ieca, an interpretation criterion is what defines the interpreted role of a cultural object and the tasks that it fulfills under that role. For example, an interpretation may define a cultural object’s role as meaning carrier, which includes the task of evoking the sentiment of happiness, the task of evoking the abstract concept of freedom, and the task of evoking the concrete place “Paris”. An interpretation criterion is conceptualized by a Person, and can be expressed as an information object (such as a text) that is realized in some way (like a txt file).</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/arco/ontology/context-description</rdfs:isDefinedBy>
         <rdfs:label>Interpretation Criterion</rdfs:label>
     </owl:Class>
@@ -1698,5 +1698,3 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
 
 <!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
-
-
