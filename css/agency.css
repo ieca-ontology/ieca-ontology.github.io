@@ -341,13 +341,12 @@ header.masthead::after {
 
 header.masthead .intro-text {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 25px;
+  font-size: 3vw;
   color: #CAFAFE;
-
   /*font-style: italic;*/
   line-height: 18px;
   margin-bottom: 25px;
@@ -359,7 +358,7 @@ header.masthead .intro-text .intro-heading {
   font-size: 40vw;
   font-weight: 900;
   line-height: 90px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   color: black;
   /* text-shadow: -2px 3px 3px rgba(32, 37, 43, 1); */
   font-family: 'Raleway', sans-serif;
@@ -374,7 +373,7 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 2em;
