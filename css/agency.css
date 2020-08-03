@@ -240,7 +240,6 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: white;
   font-family: 'Abel', sans-serif;
 }
 
@@ -357,7 +356,7 @@ header.masthead .intro-text .intro-lead-in {
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 20em;
+  font-size: 40vw;
   font-weight: 900;
   line-height: 90px;
   margin-bottom: 25px;
@@ -388,7 +387,7 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Abel', sans-serif;
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 35em;
+    font-size: 40vw;
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
