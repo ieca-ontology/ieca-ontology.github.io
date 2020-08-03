@@ -11,14 +11,14 @@
      xmlns:rico_dul="https://rico-ontology.github.io/rico_dul.owl#"
      xmlns:Conceptualization="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#"
      xmlns:context-description="https://w3id.org/arco/ontology/context-description/">
-    <owl:Ontology rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl">
-        <owl:versionIRI rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl"/>
+    <owl:Ontology rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl">
+        <owl:versionIRI rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delfina Sol Pandiani</dc:creator>
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO Ontology - Related Interpretations of Cultural Objects</terms:title>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IECA Ontology (Interpretative Encounters with Cultural Artifacts)</terms:title>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</terms:title>
         <terms:title>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</terms:title>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO Ontology is based on DOLCE DnS Ultralite, and was specifically developed for the formal representation of information surrounding the interpretations of cultural objects.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO (Related Interpretations of Cultural Objects)</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IECA is an ontology based on DOLCE DnS Ultralite for representing the content and context of interpretative encounters between cognitive agents and cultural artifacts.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IECA (Interpretative Encounters with Cultural Artifacts)</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -1597,121 +1597,121 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#AbstractConceptEvoker -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#AbstractConceptEvoker">
         <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#Evoker"/>
-        <isTaskDefinedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1"/>
-        <isTaskOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier"/>
-        <rico_dul:taskEvokes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Expressiveness"/>
-        <rico_dul:taskEvokes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Sensuality"/>
-        <rico_dul:taskEvokes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Vitality"/>
+        <isTaskDefinedIn rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretationCriterion1"/>
+        <isTaskOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#MeaningCarrier"/>
+        <rico_dul:taskEvokes rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Expressiveness"/>
+        <rico_dul:taskEvokes rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Sensuality"/>
+        <rico_dul:taskEvokes rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Vitality"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#ArchedEyebrows -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#ArchedEyebrows -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#ArchedEyebrows">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#ArchedEyebrows">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
-        <isQualityOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
+        <isQualityOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#KourosOfTenea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#DecoratedAreolas -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#DecoratedAreolas -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#DecoratedAreolas">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#DecoratedAreolas">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
-        <isQualityOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
+        <isQualityOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#KourosOfTenea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Expressiveness -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#Expressiveness -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Expressiveness">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#Expressiveness">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
-        <rico_dul:isEvokedbyTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
+        <rico_dul:isEvokedbyTask rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#AbstractConceptEvoker"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Glypothek -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#Glypothek -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Glypothek">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#Glypothek">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
-        <isLocationOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
+        <isLocationOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretativeEncounter1"/>
         <rdfs:comment>Glyptothek München is a museum in Munich,  commissioned by the Bavarian King Ludwig I to house his collection of Greek and Roman sculptures.</rdfs:comment>
         <rdfs:seeAlso>https://viaf.org/viaf/156625362/</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1 -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpretation1 -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpretation1">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/context-description/Interpretation"/>
-        <Conceptualization:isBelievedBy rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
-        <includesEvent rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
-        <includesObject rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
-        <context-description:hasInterpretationCriterion rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1"/>
+        <Conceptualization:isBelievedBy rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#VinzenzBrinkmann"/>
+        <includesEvent rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretativeEncounter1"/>
+        <includesObject rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#KourosOfTenea"/>
+        <context-description:hasInterpretationCriterion rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretationCriterion1"/>
         <rdfs:comment>&quot;The Archaic kouros is not just the image of a well-groomed young man, but also a sensuous figure.&quot;</rdfs:comment>
         <rdfs:comment>Vinzenz Brinkmann&apos;s interpretation of the Kouros of Tenea as a sensous, vital and expressive figure.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1 -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretationCriterion1 -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretationCriterion1">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/context-description/InterpretationCriterion"/>
-        <Conceptualization:isAssumedBy rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
-        <definesRole rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier"/>
-        <definesTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
-        <context-description:isInterpretationCriterionOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
+        <Conceptualization:isAssumedBy rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#VinzenzBrinkmann"/>
+        <definesRole rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#MeaningCarrier"/>
+        <definesTask rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#AbstractConceptEvoker"/>
+        <context-description:isInterpretationCriterionOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpretation1"/>
         <rdfs:comment>&quot;The eyebrows, which lavishly arched over the eyes to end at the temples, and the elegantly stylized pubic hair of the early kouroi lend the figures a particular note of manicured extravagance. Sensuous vitality-with an expressiveness that may be surprising to the modern viewer-radiates from the ornamental emphasis on the painted nipples. Their broad red areolas attract attention and contribute to the eroticism of the figures.&quot; (page 28, Brinkmann et al 2017)</rdfs:comment>
         <rdfs:comment>The interpretation criterion utilized by Vinzenz Brinkmann in 2017 for his interpretation of the Kouros of Tenea.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1 -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretativeEncounter1 -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretativeEncounter1">
         <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter"/>
-        <hasLocation rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Glypothek"/>
-        <hasParticipant rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
-        <hasTimeInterval rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#2017"/>
-        <involvesAgent rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
-        <isEventIncludedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
+        <hasLocation rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Glypothek"/>
+        <hasParticipant rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#KourosOfTenea"/>
+        <hasTimeInterval rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#2017"/>
+        <involvesAgent rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#VinzenzBrinkmann"/>
+        <isEventIncludedIn rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpretation1"/>
         <rdfs:comment>The interpretative encounter between Vinzenz Brinkmann and the Reconstruction of the kouros from Tenea that took place in 2017 in Glypothek, Munich.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Interpreter -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpreter -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Interpreter">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpreter">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
-        <hasSetting rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#2017"/>
-        <isRoleOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
+        <hasSetting rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#2017"/>
+        <isRoleOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#VinzenzBrinkmann"/>
         <rdfs:comment>Role that a person takes when encountering a cultural object and assuming that it carries meaning.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#KourosOfTenea -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#KourosOfTenea">
         <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject"/>
-        <hasQuality rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#ArchedEyebrows"/>
-        <hasQuality rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#DecoratedAreolas"/>
-        <hasQuality rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Polychrome"/>
-        <hasQuality rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#StylizedPubicHair"/>
-        <hasRole rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier"/>
-        <isObjectIncludedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
-        <isParticipantIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
+        <hasQuality rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#ArchedEyebrows"/>
+        <hasQuality rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#DecoratedAreolas"/>
+        <hasQuality rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Polychrome"/>
+        <hasQuality rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#StylizedPubicHair"/>
+        <hasRole rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#MeaningCarrier"/>
+        <isObjectIncludedIn rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpretation1"/>
+        <isParticipantIn rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretativeEncounter1"/>
         <rdfs:comment>The Kouros of Tenea (2015) in Liebeghaus Sculpture Collection (Polychromy Research Project) is a polychrome reconstruction of the original Greek (ca. 530 BC) Kouros now present in Glypothek, Munich.</rdfs:comment>
         <rdfs:label>Kouros of Tenea</rdfs:label>
         <rdfs:seeAlso>http://www.stiftung-archaeologie.de/Kouros_from_Tenea_fullsize.html</rdfs:seeAlso>
@@ -1719,53 +1719,53 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#MeaningCarrier -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#MeaningCarrier">
         <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#InterpretedRole"/>
-        <hasTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
-        <isRoleDefinedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1"/>
-        <isRoleOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
+        <hasTask rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#AbstractConceptEvoker"/>
+        <isRoleDefinedIn rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretationCriterion1"/>
+        <isRoleOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#KourosOfTenea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Polychrome -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#Polychrome -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Polychrome">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#Polychrome">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
-        <isQualityOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
+        <isQualityOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#KourosOfTenea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Sensuality -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#Sensuality -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Sensuality">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#Sensuality">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
-        <rico_dul:isEvokedbyTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
+        <rico_dul:isEvokedbyTask rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#AbstractConceptEvoker"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#StylizedPubicHair -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#StylizedPubicHair -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#StylizedPubicHair">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#StylizedPubicHair">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
-        <isQualityOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
+        <isQualityOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#KourosOfTenea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#VinzenzBrinkmann -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#VinzenzBrinkmann">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
-        <Conceptualization:assumes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1"/>
-        <Conceptualization:believes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
-        <hasRole rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpreter"/>
-        <hasSetting rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#2017"/>
-        <isAgentInvolvedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
+        <Conceptualization:assumes rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretationCriterion1"/>
+        <Conceptualization:believes rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpretation1"/>
+        <hasRole rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpreter"/>
+        <hasSetting rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#2017"/>
+        <isAgentInvolvedIn rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretativeEncounter1"/>
         <rdfs:comment>Vinzenz Brinkmann (b. 1958)</rdfs:comment>
         <rdfs:isDefinedBy>http://id.loc.gov/authorities/names/nr96008110</rdfs:isDefinedBy>
         <rdfs:label>Vinzenz Brinkmann</rdfs:label>
@@ -1774,31 +1774,31 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Vitality -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#Vitality -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Vitality">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#Vitality">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
-        <rico_dul:isEvokedbyTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
+        <rico_dul:isEvokedbyTask rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#AbstractConceptEvoker"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Youth -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#Youth -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Youth">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#Youth">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
-        <rico_dul:isEvokedbyTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
+        <rico_dul:isEvokedbyTask rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#AbstractConceptEvoker"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#2017 -->
+    <!-- https://ieca-ontology.github.io/ieca_dul_kb.owl#2017 -->
 
-    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#2017">
+    <owl:NamedIndividual rdf:about="https://ieca-ontology.github.io/ieca_dul_kb.owl#2017">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
-        <isSettingFor rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpreter"/>
-        <isSettingFor rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
-        <isTimeIntervalOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
+        <isSettingFor rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#Interpreter"/>
+        <isSettingFor rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#VinzenzBrinkmann"/>
+        <isTimeIntervalOf rdf:resource="https://ieca-ontology.github.io/ieca_dul_kb.owl#InterpretativeEncounter1"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

@@ -8,15 +8,16 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ieca_dul="https://ieca-ontology.github.io/ieca_dul.owl#"
      xmlns:rico_dul="https://rico-ontology.github.io/rico_dul.owl#">
-    <owl:Ontology rdf:about="https://rico-ontology.github.io/rico_dul.owl">
-        <owl:versionIRI rdf:resource="https://rico-ontology.github.io/rico_dul.owl"/>
+    <owl:Ontology rdf:about="https://ieca-ontology.github.io/ieca_dul.owl">
+        <owl:versionIRI rdf:resource="https://ieca-ontology.github.io/ieca_dul.owl"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delfina Sol Pandiani</dc:creator>
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO Ontology - Related Interpretations of Cultural Objects</terms:title>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IECA Ontology (Interpretative Encounters with Cultural Artifacts)</terms:title>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</terms:title>
         <terms:title>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</terms:title>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO Ontology is based on DOLCE DnS Ultralite, and was specifically developed for the formal representation of information surrounding the interpretations of cultural objects.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO (Related Interpretations of Cultural Objects)</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IECA is an ontology based on DOLCE DnS Ultralite for representing the content and context of interpretative encounters between cognitive agents and cultural artifacts.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IECA (Interpretative Encounters with Cultural Artifacts)</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -65,15 +66,15 @@
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#License -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#License -->
 
-    <owl:AnnotationProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#License"/>
+    <owl:AnnotationProperty rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#License"/>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#Rights -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#Rights -->
 
-    <owl:AnnotationProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#Rights"/>
+    <owl:AnnotationProperty rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#Rights"/>
     
 
 
@@ -907,24 +908,24 @@ A generic relation holding between a Description and a Concept. In order to be u
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#isEvokedbyTask -->
 
-    <owl:ObjectProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask">
+    <owl:ObjectProperty rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#isEvokedbyTask">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
-        <owl:inverseOf rdf:resource="https://rico-ontology.github.io/rico_dul.owl#taskEvokes"/>
+        <owl:inverseOf rdf:resource="https://ieca-ontology.github.io/ieca_dul.owl#taskEvokes"/>
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
-        <rdfs:range rdf:resource="https://rico-ontology.github.io/rico_dul.owl#Evoker"/>
+        <rdfs:range rdf:resource="https://ieca-ontology.github.io/ieca_dul.owl#Evoker"/>
         <rdfs:comment>Relation between a Concept and the Task that evokes it.</rdfs:comment>
         <rdfs:label>is evoked by task</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#taskEvokes -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#taskEvokes -->
 
-    <owl:ObjectProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#taskEvokes">
+    <owl:ObjectProperty rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#taskEvokes">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
-        <rdfs:domain rdf:resource="https://rico-ontology.github.io/rico_dul.owl#Evoker"/>
+        <rdfs:domain rdf:resource="https://ieca-ontology.github.io/ieca_dul.owl#Evoker"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
         <rdfs:comment>Relation between an Evoker Task and a Concept (such as a sentiment, a high level abstract concept, etc.).</rdfs:comment>
         <rdfs:label>task evokes</rdfs:label>
@@ -1481,9 +1482,9 @@ Any Region in a dimensional space that aims at representing time.
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#Evoker -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#Evoker -->
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#Evoker">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#Evoker">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
         <rdfs:comment>A special task part of an interpreted role of cultural objects as meaning carriers. Used for cultural objects that in their interpreted role evoke a concept. For example, evoker of a sentiment (such as fear, lust, anger, etc.), of an abstract concept (such as, freedom, love, or justice), or of a concrete concept (tree, house, shoe).</rdfs:comment>
         <rdfs:label>Evoker</rdfs:label>
@@ -1491,9 +1492,9 @@ Any Region in a dimensional space that aims at representing time.
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#IntangibleCulturalObject -->
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#IntangibleCulturalObject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/CulturalProperty"/>
         <rdfs:comment>This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person.</rdfs:comment>
         <rdfs:label>Intangible Cultural Object</rdfs:label>
@@ -1502,9 +1503,9 @@ Any Region in a dimensional space that aims at representing time.
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#InterpretativeEncounter -->
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#InterpretativeEncounter">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
         <rdfs:comment>A type of action event in which one person participates as interpreter and one object participates as meaning carrier, and executes tasks as defined in a description (interpretation).
 
@@ -1514,9 +1515,9 @@ The definition of this class was deemed necessary as it is central to the domain
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#InterpretedRole -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#InterpretedRole -->
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#InterpretedRole">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#InterpretedRole">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
         <rdfs:comment>This subclass of the Role class was specifically created to designate roles assigned to (mostly) cultural objects within the interpretative encounter by an interpreter. That is, interpreted roles are roles that are solely defined by the interpretation criterion conceptualized by a Person (eg., &quot;carrier of meaning&quot;)</rdfs:comment>
         <rdfs:label>Interpreted Role</rdfs:label>
@@ -1524,9 +1525,9 @@ The definition of this class was deemed necessary as it is central to the domain
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#Sentiment -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#Sentiment -->
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#Sentiment">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#Sentiment">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
         <rdfs:comment>Sentiments are concepts such as fear, pain, laughter, happiness, or lust, which may be the object of the evoking task of a cultural object interpreted as a meaning carrier.</rdfs:comment>
         <rdfs:label>Sentiment</rdfs:label>
@@ -1534,9 +1535,9 @@ The definition of this class was deemed necessary as it is central to the domain
     
 
 
-    <!-- https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject -->
+    <!-- https://ieca-ontology.github.io/ieca_dul.owl#TangibleCulturalObject -->
 
-    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject">
+    <owl:Class rdf:about="https://ieca-ontology.github.io/ieca_dul.owl#TangibleCulturalObject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/CulturalProperty"/>
         <rdfs:comment>This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person.</rdfs:comment>
         <rdfs:label>Tangible Cultural Object</rdfs:label>

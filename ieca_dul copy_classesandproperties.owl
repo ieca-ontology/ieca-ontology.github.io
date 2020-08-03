@@ -7,8 +7,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://IECA-ontology.github.io/ieca_dul.owl">
-        <owl:versionIRI rdf:resource="https://IECA-ontology.github.io/ieca_dul.owl"/>
+    <owl:Ontology rdf:about="https://ieca-ontology.github.io/ieca_dul.owl">
+        <owl:versionIRI rdf:resource="https://ieca-ontology.github.io/ieca_dul.owl"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IECA is an ontology for representing the content and context of interpretative encounters between cognitive agents and cultural artifacts.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IECA (Interpretative Encounters with Cultural Artifacts)</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created by Delfina Sol Pandiani as an extension of Aldo Gangemi&apos;s DOLCE DnS Ultralite, specifically for the formal representation of information surrounding the interpretations of cultural objects.</owl:versionInfo>
