@@ -1,0 +1,1914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0038)http://oops.linkeddata.es/response.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="Author" content="María Poveda Villalón">
+	<meta name="Languaje" content="English">
+	<meta name="Keywords" content="ontology, ontology evaluation, pitfalls">
+	<meta name="Description" content="This web provide online access to OOPS! - OntOlogy Pitfall Scanner!">
+	
+	
+	<link href="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/estilos.css" rel="stylesheet" type="text/css">
+	
+	<script async="" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/analytics.js"></script><script id="twitter-wjs" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/widgets.js"></script><script type="text/javascript" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/loading.js"></script>
+
+	<!--[if lt IE 7]>
+	<link href="estilosie.css" rel="stylesheet" type="text/css" />
+	<![endif]--> 
+	
+	<title> OOPS! - OntOlogy Pitfall Scanner! - Results </title> 
+
+<script charset="utf-8" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/button.a9e51eea566eab199c00950f37200d0b.js"></script></head>
+<body>
+
+<div id="wrap">
+
+<div id="header">
+	<!--<h1><a href="index.jsp">OOPS! </a></h1>
+	<h2>OntOlogy Pitfall Scanner!</h2>-->
+	<span style="float: left;"><a href="http://oops.linkeddata.es/index.jsp"><img src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/logoWhite65.png" alt="Logo OOPS!"></a></span>
+	<p><span>OntOlogy Pitfall Scanner!</span></p>
+</div>
+
+<div id="load" class="loading"> 
+	<p><img src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/loading.gif" alt="scanning"> </p>
+	<br>
+	<p>OOPS! is scanning...</p>
+</div>
+
+<div id="intro"> 
+<p><strong>OOPS! (OntOlogy Pitfall Scanner!)</strong> helps you to detect some of the most common
+pitfalls appearing when developing ontologies.</p>  
+
+<p>To try it, enter a URI or paste an OWL 
+document into the text field above. A list of pitfalls and the elements of your ontology
+ where they appear will be displayed. </p>
+ 
+</div>
+
+
+
+
+<div id="intro2"> 
+	<div class="textbox-big">
+		<form method="post" action="http://oops.linkeddata.es/response.jsp">
+			<p> Scanner by URI:
+			<input type="text" name="uri" id="uriEx" value="">  
+			<input type="submit" name="buttonURI" value="Scanner by URI" onclick="doValidation()"> 
+			</p>
+			<div id="example">
+				<p onclick="example1(&#39;http://oops.linkeddata.es/example/swc_2009-05-09.rdf&#39;)">
+				Example: http://oops.linkeddata.es/example/swc_2009-05-09.rdf
+				</p>
+			</div>
+					
+		<br>
+		
+			<p> Scanner by direct input:
+			   <textarea class="medio" cols="78" rows="10" name="RDF" placeholder="If you just include the RDF code here, the following Pitfalls will not be checked:
+ P36. URI contains file extension, P37. Ontology not available, P40. Namespace hijacking">&lt;?xml version="1.0"?&gt;
+&lt;rdf:RDF xmlns="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:rico_dul="https://rico-ontology.github.io/rico_dul.owl#"&gt;
+    &lt;owl:Ontology rdf:about="https://rico-ontology.github.io/rico_dul.owl"&gt;
+        &lt;owl:versionIRI rdf:resource="https://rico-ontology.github.io/rico_dul.owl"/&gt;
+        &lt;dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;Delfina Sol Pandiani&lt;/dc:creator&gt;
+        &lt;terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;RICO Ontology - Related Interpretations of Cultural Objects&lt;/terms:title&gt;
+        &lt;terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).&lt;/terms:title&gt;
+        &lt;terms:title&gt;This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.&lt;/terms:title&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;RICO Ontology is based on DOLCE DnS Ultralite, and was specifically developed for the formal representation of information surrounding the interpretations of cultural objects.&lt;/rdfs:comment&gt;
+        &lt;rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;RICO (Related Interpretations of Cultural Objects)&lt;/rdfs:label&gt;
+        &lt;owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"&gt;1.0&lt;/owl:versionInfo&gt;
+    &lt;/owl:Ontology&gt;
+    
+
+
+    &lt;!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     --&gt;
+
+    
+
+
+    &lt;!-- http://purl.org/dc/elements/1.1/creator --&gt;
+
+    &lt;owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/&gt;
+    &lt;/owl:AnnotationProperty&gt;
+    
+
+
+    &lt;!-- http://purl.org/dc/terms/title --&gt;
+
+    &lt;owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/&gt;
+    
+
+
+    &lt;!-- http://www.w3.org/2000/01/rdf-schema#comment --&gt;
+
+    &lt;owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/&gt;
+    
+
+
+    &lt;!-- http://www.w3.org/2000/01/rdf-schema#label --&gt;
+
+    &lt;owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/&gt;
+    
+
+
+    &lt;!-- http://www.w3.org/2002/07/owl#versionInfo --&gt;
+
+    &lt;owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#License --&gt;
+
+    &lt;owl:AnnotationProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#License"/&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#Rights --&gt;
+
+    &lt;owl:AnnotationProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#Rights"/&gt;
+    
+
+
+    &lt;!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     --&gt;
+
+    
+
+
+    &lt;!-- http://www.w3.org/2001/XMLSchema#dateTime --&gt;
+
+    &lt;rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/&gt;
+    
+
+
+    &lt;!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     --&gt;
+
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:comment&gt;An Agent assumes a (conceptualized) Description when she uses it to create a (mental) model or to draw inferences in some reasoning task. This is not the same as 'belief' in epistemic terms. Belief is about a Situation, considered as true, plausible, etc., while assumption is about assuming a Description or Concept.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy&gt;http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl&lt;/rdfs:isDefinedBy&gt;
+        &lt;rdfs:label&gt;assumes&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment&gt;The conceptualization of a Situation that is only indirectly perceived and processed by an Agent&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy&gt;http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl&lt;/rdfs:isDefinedBy&gt;
+        &lt;rdfs:label&gt;believes&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:comment&gt;An Agent assumes a (conceptualized) Description when she uses it to create a (mental) model or to draw inferences in some reasoning task.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy&gt;http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl&lt;/rdfs:isDefinedBy&gt;
+        &lt;rdfs:label&gt;is assumed by&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:comment&gt;The relation between an Agent and the Situation that she believes to be true or plausible.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy&gt;http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl&lt;/rdfs:isDefinedBy&gt;
+        &lt;rdfs:label&gt;is believed by&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"&gt;
+        &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/&gt;
+        &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A catch-all object property, useful for alignment and querying purposes.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label&gt;associated with&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between a Concept and an Entity, e.g. the Role 'student' classifies a Person 'John'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;classifica&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;classifies&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation stating that an Agent is internally representing a SocialObject: situations, descriptions, concepts, etc. E.g., 'John believes in the conspiracy theory'; 'Niels Bohr created the solar-system metaphor for the atomic theory'; 'Jacques assumes all swans are white'; 'the task force members share the attack plan'. Conceptualizations can be distinguished into different forms, primarily based on the type of SocialObject that is conceptualized. Descriptions and concepts can be 'assumed', situations can be 'believed' or 'known', plans can be 'adopted', etc. (see ontology: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;conceptualizes&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;concettualizza&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between a Description and a Concept, e.g. a Workflow for a governmental Organization defines the Role 'officer', or 'the Italian Traffic Law defines the role Vehicle'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;defines&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;definisce&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between a description and a role, e.g. the recipe for a cake defines the role 'ingredient'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;defines role&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;definisce il ruolo&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between a description and a task, e.g. the recipe for a cake defines the task 'boil'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;defines task&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;definisce il task&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+The relation between a Description and an Entity : a Description gives a unity to a Collection of parts (the components), or constituents, by assigning a Role to each of them in the context of a whole Object (the system). A same Entity can be given different descriptions, for example, an old cradle can be given a unifying Description based on the original aesthetic design, the functionality it was built for, or a new aesthetic functionality in which it can be used as a flower pot.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;describes&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;descrive&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between an InformationObject and a 'meaning', generalized here as a 'SocialObject'. For example: 'A Beehive is a structure in which bees are kept, typically in the form of a dome or box.' (Oxford dictionary)'; 'the term Beehive expresses the concept Beehive in my apiculture ontology'. The intuition for 'meaning' is intended to be very broad. A separate, large comment is included for those who want to investigate more on what kind of meaning can be represented in what form.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+This is a large comment field for those who want to investigate the different uses of the 'expresses' relation for modeling different approaches to meaning characterization and modeling. For example, in all these cases, some aspect of meaning is involved: - Beehive means "a structure in which bees are kept, typically in the form of a dome or box." (Oxford dictionary) - 'Beehive' is a synonym in noun synset 09218159 "beehive|hive" (WordNet) - 'the term Beehive can be interpreted as the fact of 'being a beehive', i.e. a relation that holds for concepts such as Bee, Honey, Hosting, etc.' - 'the text of Italian apiculture regulation expresses a rule by which beehives should be kept at least one kilometer away from inhabited areas' - 'the term Beehive expresses the concept Beehive' - ''Beehive' for apiculturists does not express the same meaning as for, say, fishermen' - 'Your meaning of 'Beautiful' does not seem to fit mine' - ''Beehive' is formally interpreted as the set of all beehives' - 'from the term 'Beehive', we can build a vector space of statistically significant cooccurring terms in the documents that contain it' - the lexeme 'Belly' expresses the role 'Body_Part' in the frame 'ObservableBodyParts' (FrameNet) As the examples suggest, the 'meaning of meaning' is dependent on the background approach/theory that one assumes. One can hardly make a summary of the too many approaches and theories of meaning, therefore this relation is maybe the most controversial and difficult to explain; normally, in such cases it would be better to give up formalizing. However, the usefulness of having a 'semantic abstraction' in modeling information objects is so high (e.g. for the semantic web, interoperability, reengineering, etc.), that we accept this challenging task, although without taking any particular position in the debate. We provide here some examples, which we want to generalize upon when using the 'expresses' relation to model semantic aspects of social reality. In the most common approach, lexicographers that write dictionaries, glossaries, etc. assume that the meaning of a term is a paraphrase (or 'gloss', or 'definition'). Another approach is provided by concept schemes like thesauri and lexicons, which assume that the meaning of a term is a 'concept', encoded as a 'lemma', 'synset', or 'descriptor'. Still another approach is that of psychologists and cognitive scientists, which often assume that the meaning of an information object is a concept encoded in the mind or cognitive system of an agent. A radically different approach is taken by social scientists and semioticians, who usually assume that meanings of an information object are spread across the communication practices in which members of a community use that object. Another approach that tackles the distributed nature of meaning is assumed by geometrical models of semantics, which assume that the meaning of an InformationObject (e.g. a word) results from the set of informational contexts (e.g. within texts) in which that object is used similarly. The logical approach to meaning is still different, since it assumes that the meaning of e.g. a term is equivalent to the set of individuals that the term can be applied to; for example, the meaning of 'Ali' is e.g. an individual person called Ali, the meaning of 'Airplane' is e.g. the set of airplanes, etc. Finally, an approach taken by structuralist linguistics and frame semantics is that a meaning is the relational context in which an information object can be applied; for example, a meaning of 'Airplane' is situated e.g. in the context ('frame') of passenger airline flights. These different approaches are not necessarily conflicting, and they mostly talk about different aspects of so-called 'semantics'. They can be summarized and modelled within DOLCE-Ultralite as follows (notice that such list is far from exhaustive): (1) Informal meaning (as for linguistic or commonsense semantics: a distinction is assumed between (informal) meaning and reference; see isAbout for an alternative pattern on reference) - Paraphrase meaning (as for lexicographic semantics). Here it is modelled as the expresses relation between instances of InformationObject and different instances of InformationObject that act as 'paraphrases' - Conceptual meaning (as for 'concept scheme' semantics). Here it is modelled as the expresses relation between instances of InformationObject and instances of Concept - Relational meaning (as for frame semantics). Here it is modelled as the expresses relation between instances of InformationObject and instances of Description - Cognitive meaning (as for 'psychological' semantics). Here it is modelled as the expresses relation between any instance of InformationObject and any different instance of InformationObject that isRealizedBy a mental, cognitive or neural state (depending on which theory of mind is assumed). Such states can be considered here as instances of Process (occurring in the mind, cognitive system, or neural system of an agent) - Cultural meaning (as for 'social science' semantics). Here it is modelled as the expresses relation between instances of InformationObject and instances of SocialObject (institutions, cultural paradigms, norms, social practices, etc.) - Distributional meaning (as for geometrical models of meaning). Here it is modelled as the expresses relation between any instance of InformationObject and any different instance of InformationObject that isFormallyRepresentedIn some (geometrical) Region (e.g. a vector space) (2) Formal meaning (as for logic and formal semantics: no distinction is assumed between informal meaning and reference, therefore between 'expresses' and 'isAbout', which can be used interchangeably) - Object-level formal meaning (as in the traditional first-order logic semantics). Here it is modelled as the expresses relation between an instance of InformationObject and an instance of Collection that isGroundingFor (in most cases) a Set; isGroundingFor is defined in the ontology: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl - Modal formal meaning (as in possible-world semantics). Here it is modelled as the expresses relation between an instance of InformationObject and an instance of Collection that isGroundingFor a Set, and which isPartOf some different instance of Collection that isGroundingFor a PossibleWorld This is only a first step to provide a framework, in which one can model different aspects of meaning. A more developed ontology should approach the problem of integrating the different uses of 'expresses', so that different theories, resources, methods can interoperate.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;esprime&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;expresses&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A generic, relative spatial location, holding between any entities. E.g. 'the cat is on the mat', 'Omar is in Samarcanda', 'the wound is close to the femural artery'. For 'absolute' locations, see SpaceRegion
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;ha localizzazione&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has location&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between an object and a process, e.g. 'John took part in the discussion', 'a large mass of snow fell during the avalanche', or 'a cook, some sugar, flour, etc. are all present in the cooking of a cake'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;ha come partecipante&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has participant&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between entities and qualities, e.g. 'Dmitri's skin is yellowish'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;ha qualitÃ&nbsp;&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has quality&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between entities and regions, e.g. 'the number of wheels of that truck is 12', 'the time of the experiment is August 9th, 2004', 'the whale has been localized at 34 degrees E, 20 degrees S'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;ha attributo&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has region&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between an object and a role, e.g. the person 'John' has role 'student'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;ha ruolo&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has role&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between entities and situations, e.g. 'this morning I've prepared my coffee with a new fantastic Arabica', i.e.: (an amount of) a new fantastic Arabica hasSetting the preparation of my coffee this morning.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has setting&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ nel contesto di&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between roles and tasks, e.g. 'students have the duty of giving exams' (i.e. the Role 'student' hasTask the Task 'giving exams').
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;ha come obiettivo&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has task&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/&gt;
+        &lt;rdfs:comment xml:lang="en"&gt;
+The generic relation between events and time intervals.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;ha intervallo temporale&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has time interval&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between situations and persons, e.g. 'this morning I've prepared my coffee and had my fingers burnt' (i.e.: the preparation of my coffee this morning included me).
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;include l'agente&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;includes agent&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between situations and events, e.g. 'this morning I've prepared my coffee and had my fingers burnt' (i.e.: the preparation of my coffee this morning included a burning of my fingers).
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;include l'evento&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;includes event&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between situations and objects, e.g. 'this morning I've prepared my coffee and had my fingers burnt' (i.e.: the preparation of my coffee this morning included me).
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;include l'oggetto&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;includes object&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between situations and time intervals, e.g. 'this morning I've prepared my coffee and had my fingers burnt' (i.e.: preparing my coffee was held this morning). A data value attached to the time interval typically complements this modelling pattern.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;include tempo&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;includes time&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;Agent participation.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;coinvolge agente&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;involves agent&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment&gt;The relation between an Agent and a Situation in which it is included.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is agent included in&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;Defines the relation between an Agent and an Event the agent participates in.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is agent involved in&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between a Concept and an Entity, e.g. 'John is considered a typical rude man'; your last concert constitutes the achievement of a lifetime; '20-year-old means she's mature enough'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is classified by&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ classificato da&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A more generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is concept used in&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ un concetto usato in&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation stating that an Agent is internally representing a Description . E.g., 'John believes in the conspiracy theory'; 'Niels Bohr created a solar-system metaphor for his atomic theory'; 'Jacques assumes all swans are white'; 'the task force shares the attack plan'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is conceptualized by&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ concettualizzato da&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between a Description and a Concept, e.g. a Workflow for a governmental Organization defines the Role 'officer', or 'the Italian Traffic Law defines the role Vehicle'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is defined in&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ definito in&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+The relation between an Entity and a Description: a Description gives a unity to a Collection of parts (the components), or constituents, by assigning a Role to each of them in the context of a whole Object (the system). A same Entity can be given different descriptions, for example, an old cradle can be given a unifying Description based on the original aesthetic design, the functionality it was built for, or a new aesthetic functionality in which it can be used as a flower pot.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is described by&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ descritto da&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment&gt;The relation between an Event and a Situation in which it is included&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is event included in&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ un evento nel contesto di&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between a dul:SocialObject (the 'meaning') and a dul:InformationObject (the 'expression'). For example: 'A Beehive is a structure in which bees are kept, typically in the form of a dome or box.' (Oxford dictionary)'; 'the term Beehive expresses the concept Beehive in my apiculture ontology'. The intuition for 'meaning' is intended to be very broad. A separate, large comment is included in the encoding of 'expresses', for those who want to investigate more on what kind of meaning can be represented in what form.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is expressed by&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ espresso da&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A generic, relative localization, holding between any entities. E.g. 'Rome is the seat of the Pope', 'the liver is the location of the tumor'. For 'absolute' locations, see SpaceRegion
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is location of&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ una localizzazione di&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment&gt;The relation between an Object and a Situation in which it is included.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is object included in&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ un oggetto nel contesto di&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between an object and a process, e.g. 'John took part in the discussion', 'a large mass of snow fell during the avalanche', or 'a cook, some sugar, flour, etc. are all present in the cooking of a cake'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is participant in&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ un partecipante a&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between entities and qualities, e.g. 'Dmitri's skin is yellowish'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is quality of&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ una qualitÃ&nbsp; di&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between an information realization and an information object, e.g. the paper copy of the Italian Constitution realizes the text of the Constitution.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is realized by&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ realizzato da&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between entities and regions, e.g. 'the color of my car is red'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is region for&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ una regione di&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Any relation between concepts, e.g. superordinated, conceptual parthood, having a parameter, having a task, superordination, etc.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is related to concept&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ associato al concetto&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between a description and a role, e.g. the role 'Ingredient' is defined in the recipe for a cake.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is role defined in&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ un ruolo definito in&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between an object and a role, e.g. 'student' is the role of 'John'.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is role of&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ un ruolo di&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between situations and entities, e.g. 'this morning I've prepared my coffee with a new fantastic Arabica', i.e.: the preparation of my coffee this morning is the setting for (an amount of) a new fantastic Arabica.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;include&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is setting for&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between a description and a task, e.g. the task 'boil' is defined in a recipe for a cake.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is task defined in&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ un task definito in&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between roles and tasks, e.g. 'students have the duty of giving exams' (i.e. the Role 'student' hasTask the Task 'giving exams').
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is task of&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ un obiettivo per&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment&gt;The relation between a Time Interval and a Situation in which it is included.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is time included in&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ã¨ un tempo nel contesto di&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:comment xml:lang="en"&gt;
+The generic relation between time intervals and events.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;intervallo temporale di&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;is time interval of&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A relation between an information realization and an information object, e.g. the paper copy of the Italian Constitution realizes the text of the Constitution.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;realizes&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;realizza&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description. This last condition cannot be encoded for object properties in OWL.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;usa il concetto&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;uses concept&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;owl:inverseOf rdf:resource="https://rico-ontology.github.io/rico_dul.owl#taskEvokes"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:range rdf:resource="https://rico-ontology.github.io/rico_dul.owl#Evoker"/&gt;
+        &lt;rdfs:comment&gt;Relation between a Concept and the Task that evokes it.&lt;/rdfs:comment&gt;
+        &lt;rdfs:label&gt;is evoked by task&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#taskEvokes --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#taskEvokes"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/&gt;
+        &lt;rdfs:domain rdf:resource="https://rico-ontology.github.io/rico_dul.owl#Evoker"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:comment&gt;Relation between an Evoker Task and a Concept (such as a sentiment, a high level abstract concept, etc.).&lt;/rdfs:comment&gt;
+        &lt;rdfs:label&gt;task evokes&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/&gt;
+        &lt;owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf"/&gt;
+        &lt;rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/Interpretation"/&gt;
+        &lt;rdfs:range rdf:resource="https://w3id.org/arco/ontology/context-description/InterpretationCriterion"/&gt;
+        &lt;rdfs:comment&gt;This property relates an authorship, dating, commission, or other interpretation situations, to the reason or criterion which led to that interpretation.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/&gt;
+        &lt;rdfs:label&gt;has interpretation criterion&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf --&gt;
+
+    &lt;owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/&gt;
+        &lt;rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/InterpretationCriterion"/&gt;
+        &lt;rdfs:range rdf:resource="https://w3id.org/arco/ontology/context-description/Interpretation"/&gt;
+        &lt;rdfs:comment&gt;This property relates an interpretation criterion to the interpretation that was based on that criterion.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/&gt;
+        &lt;rdfs:label&gt;is interpretation criterion of&lt;/rdfs:label&gt;
+    &lt;/owl:ObjectProperty&gt;
+    
+
+
+    &lt;!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     --&gt;
+
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue --&gt;
+
+    &lt;owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A datatype property that encodes values from a datatype for an Entity. There are several ways to encode values in DOLCE (Ultralite): 1) Directly assert an xsd:_ value to an Entity by using hasDataValue 2) Assert a Region for an Entity by using hasRegion, and then assert an xsd:_ value to that Region, by using hasRegionDataValue 3) Assert a Quality for an Entity by using hasQuality, then assert a Region for that Quality, and assert an xsd:_ value to that Region, by using hasRegionDataValue 4) When the value is required, but not directly observed, assert a Parameter for an xsd:_ value by using hasParameterDataValue, and then associate the Parameter to an Entity by using isConstraintFor 5) When the value is required, but not directly observed, you can also assert a Parameter for a Region by using parametrizes, and then assert an xsd:_ value to that Region, by using hasRegionDataValue The five approaches obey different requirements. For example, a simple value can be easily asserted by using pattern (1), but if one needs to assert an interval between two values, a Region should be introduced to materialize that interval, as pattern (2) suggests. Furthermore, if one needs to distinguish the individual Quality of a value, e.g. the particular nature of the density of a substance, pattern (3) can be used. Patterns (4) and (5) should be used instead when a constraint or a selection is modeled, independently from the actual observation of values in the real world.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;ha valore&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has data value&lt;/rdfs:label&gt;
+    &lt;/owl:DatatypeProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate --&gt;
+
+    &lt;owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A datatype property that encodes values from xsd:dateTime for an Event; a same Event can have more than one xsd:dateTime value: begin date, end date, date at which the interval holds, etc.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;evento ha data&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has event date&lt;/rdfs:label&gt;
+    &lt;/owl:DatatypeProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate --&gt;
+
+    &lt;owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A datatype property that encodes values from xsd:dateTime for a TimeInterval; a same TimeInterval can have more than one xsd:dateTime value: begin date, end date, date at which the interval holds, etc.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has interval date&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;intervallo ha data&lt;/rdfs:label&gt;
+    &lt;/owl:DatatypeProperty&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue --&gt;
+
+    &lt;owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue"&gt;
+        &lt;rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/&gt;
+        &lt;rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/&gt;
+        &lt;rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A datatype property that encodes values for a Region, e.g. a float for the Region Height.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;has region data value&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;regione ha valore&lt;/rdfs:label&gt;
+    &lt;/owl:DatatypeProperty&gt;
+    
+
+
+    &lt;!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     --&gt;
+
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Any Entity that cannot be located in space-time. E.g. mathematical entities: formal semantics elements, regions within dimensional spaces, etc.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Abstract&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Astratto&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/&gt;
+                &lt;owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+An Event with at least one Agent that isParticipantIn it, and that executes a Task that typically isDefinedIn a Plan, Workflow, Project, etc.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Action&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Azione&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Additional comment: a computational agent can be considered as a PhysicalAgent that realizes a certain class of algorithms (that can be considered as instances of InformationObject) that allow to obtain some behaviors that are considered typical of agents in general. For an ontology of computational objects based on DOLCE see e.g. http://www.loa-cnr.it/COS/COS.owl, and http://www.loa-cnr.it/KCO/KCO.owl.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Any agentive Object , either physical (e.g. a whale, a robot, an oak), or social (e.g. a corporation, an institution, a community).
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Agent&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Agente&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/&gt;
+                &lt;owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A Concept is a SocialObject, and isDefinedIn some Description; once defined, a Concept can be used in other Description(s). If a Concept isDefinedIn exactly one Description, see the LocalConcept class. The classifies relation relates Concept(s) to Entity(s) at some TimeInterval
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Concept&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Concetto&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A Description is a SocialObject that represents a conceptualization. It can be thought also as a 'descriptive context' that uses or defines concepts in order to create a view on a 'relational context' (cf. Situation) out of a set of data or observations. For example, a Plan is a Description of some actions to be executed by agents in a certain way, with certain parameters; a Diagnosis is a Description that provides an interpretation for a set of observed entities, etc.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Description&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Descrizione&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Entity&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;EntitÃ&nbsp;&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/&gt;
+                &lt;owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval"/&gt;
+                &lt;owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;Any physical, social, or mental process, event, or state.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Event&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Evento&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/&gt;
+                &lt;owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A Concept that classifies an Event . An event type describes how an Event should be interpreted, executed, expected, seen, etc., according to the Description that the EventType isDefinedIn (or used in)
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Event Type&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Tipo di evento&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A piece of information, be it concretely realized or not.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label&gt;Information Entity&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity"/&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A piece of information, such as a musical composition, a text, a word, a picture, independently from how it is concretely realized.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Information Object&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Oggetto informativo&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes"/&gt;
+                &lt;owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A concrete realization of an InformationObject, e.g. the written document containing the text of a law.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Information Realization&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Informazione concreta&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A person in the physical commonsense intuition: 'have you seen that person walking down the street?'
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Natural Person&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Persona fisica&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"/&gt;
+                &lt;owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/&gt;
+                &lt;owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/&gt;
+                &lt;owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Any physical, social, or mental object, or a substance. Following DOLCE Full, objects are always participating in some event (at least their own life), and are spatially located.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Object&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Oggetto&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Persons in commonsense intuition, which does not apparently distinguish between either natural or social persons.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Person&lt;/rdfs:label&gt;
+        &lt;rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;Persona {it}&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Physical value of a physical object, e.g. density, color, etc.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Caratteristica fisica&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Physical Attribute&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/&gt;
+                &lt;owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"&gt;1&lt;/owl:minCardinality&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a non-material location determined by the presence of other entities ("the area close to Roma"), pivot events or signs ("the area where the helicopter fell"), complements of other entities ("the area under the table"), etc. In this generic sense, a Place is an "approximate" location. For an "absolute" location, see the class SpaceRegion
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Luogo&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Place&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/&gt;
+        &lt;rdfs:comment&gt;rdfs:comment "Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
+From the design viewpoint, the Quality-Region distinction is useful only when individual aspects of an Entity are considered in a domain of discourse. 
+For example, in an automotive context, it would be irrelevant to consider the aspects of car windows for a specific car, unless the factory wants to check a specific window against design parameters (anomaly detection). 
+On the other hand, in an antiques context, the individual aspects for a specific piece of furniture are a major focus of attention, and may constitute the actual added value, because the design parameters for old furniture are often not fixed, and may not be viewed as 'anomalies'."^^xsd:string&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy&gt;http://www.ontologydesignpatterns.org/ont/dul/DUL.owl&lt;/rdfs:isDefinedBy&gt;
+        &lt;rdfs:label&gt;Quality&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Any region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. Regions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Region&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Regione&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/&gt;
+                &lt;owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;A Concept that classifies an Object&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Role&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Ruolo&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+A view, consistent with ('satisfying') a Description, on a set of entities. It can also be seen as a 'relational context' created by an observer on the basis of a 'frame' (i.e. a Description). For example, a PlanExecution is a context including some actions executed by agents according to certain parameters and expected tasks to be achieved from a Plan; a DiagnosedSituation is a context of observed entities that is interpreted on the basis of a Diagnosis, etc. Situation is also able to represent reified n-ary relations, where isSettingFor is the top-level relation for all binary projections of the n-ary relation. If used in a transformation pattern for n-ary relations, the designer should take care of creating only one subclass of Situation for each n-ary relation, otherwise the 'identification constraint' (Calvanese et al., IJCAI 2001) could be violated.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Situation&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Situazione&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy"/&gt;
+                &lt;owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Any Object that exists only within some communication Event, in which at least one PhysicalObject participates in. In other words, all objects that have been or are created in the process of social communication: for the sake of communication (InformationObject), for incorporating new individuals (SocialAgent, Place), for contextualizing existing entities (Situation), for collecting existing entities (Collection), or for describing existing entities (Description, Concept). Being dependent on communication, all social objects need to be expressed by some information object (information object are self-expressing).
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Oggetto sociale&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Social Object&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/&gt;
+        &lt;owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Any Region in a dimensional space that is used to localize an Entity ; i.e., it is not used to represent some characteristic (e.g. it excludes time intervals, colors, size values, judgment values, etc.). Differently from a Place , a space region has a specific dimensional space.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Regione di spazio&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Space Region&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"/&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn"/&gt;
+                &lt;owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf"/&gt;
+                &lt;owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/&gt;
+            &lt;/owl:Restriction&gt;
+        &lt;/rdfs:subClassOf&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+An EventType that classifies an Action to be executed. For example, reaching a destination is a task that can be executed by performing certain actions, e.g. driving a car, buying a train ticket, etc. The actions to execute a task can also be organized according to a Plan that is not the same as the one that defines the task (if any). For example, reaching a destination could be defined by a plan to get on holidays, while the plan to execute the task can consist of putting some travels into a sequence.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Task&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Task&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval --&gt;
+
+    &lt;owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/&gt;
+        &lt;rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+Any Region in a dimensional space that aims at representing time.
+&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/&gt;
+        &lt;rdfs:label xml:lang="it"&gt;Intervallo di tempo&lt;/rdfs:label&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Time Interval&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- http://www.w3.org/2002/07/owl#Thing --&gt;
+
+    &lt;owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#Evoker --&gt;
+
+    &lt;owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#Evoker"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/&gt;
+        &lt;rdfs:comment&gt;A special task part of an interpreted role of cultural objects as meaning carriers. Used for cultural objects that in their interpreted role evoke a concept. For example, evoker of a sentiment (such as fear, lust, anger, etc.), of an abstract concept (such as, freedom, love, or justice), or of a concrete concept (tree, house, shoe).&lt;/rdfs:comment&gt;
+        &lt;rdfs:label&gt;Evoker&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject --&gt;
+
+    &lt;owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject"&gt;
+        &lt;rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/CulturalProperty"/&gt;
+        &lt;rdfs:comment&gt;This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person.&lt;/rdfs:comment&gt;
+        &lt;rdfs:label&gt;Intangible Cultural Object&lt;/rdfs:label&gt;
+        &lt;rdfs:seeAlso rdf:resource="https://w3id.org/arco/ontology/arco/IntangibleCulturalProperty"/&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter --&gt;
+
+    &lt;owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/&gt;
+        &lt;rdfs:comment&gt;A type of action event in which one person participates as interpreter and one object participates as meaning carrier, and executes tasks as defined in a description (interpretation).
+
+The definition of this class was deemed necessary as it is central to the domain that RICO aims to formalize. Having this class allows for further specification down the road for the kinds of interpretative encounters that may take place (for example, mediated or unmediated experiences in museums, physical or virtual encounters, etc.)&lt;/rdfs:comment&gt;
+        &lt;rdfs:label&gt;Interpretative Encounter&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#InterpretedRole --&gt;
+
+    &lt;owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#InterpretedRole"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:comment&gt;This subclass of the Role class was specifically created to designate roles assigned to (mostly) cultural objects within the interpretative encounter by an interpreter. That is, interpreted roles are roles that are solely defined by the interpretation criterion conceptualized by a Person (eg., "carrier of meaning")&lt;/rdfs:comment&gt;
+        &lt;rdfs:label&gt;Interpreted Role&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#Sentiment --&gt;
+
+    &lt;owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#Sentiment"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/&gt;
+        &lt;rdfs:comment&gt;Sentiments are concepts such as fear, pain, laughter, happiness, or lust, which may be the object of the evoking task of a cultural object interpreted as a meaning carrier.&lt;/rdfs:comment&gt;
+        &lt;rdfs:label&gt;Sentiment&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject --&gt;
+
+    &lt;owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject"&gt;
+        &lt;rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/CulturalProperty"/&gt;
+        &lt;rdfs:comment&gt;This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person.&lt;/rdfs:comment&gt;
+        &lt;rdfs:label&gt;Tangible Cultural Object&lt;/rdfs:label&gt;
+        &lt;rdfs:seeAlso rdf:resource="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- https://w3id.org/arco/ontology/arco/CulturalProperty --&gt;
+
+    &lt;owl:Class rdf:about="https://w3id.org/arco/ontology/arco/CulturalProperty"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/&gt;
+        &lt;rdfs:comment&gt;This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape.
+
+In RICO, this class and its descendants are reused to represent the cultural objects that are the objects of interpretation, mainly so that the knowledge bases emerging from its use can be matched to ArCo and other resources in a way that augments the amount of knowledge available of such objects.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy&gt;http://dati.beniculturali.it/lodview-arco-onto/ontology/arco&lt;/rdfs:isDefinedBy&gt;
+        &lt;rdfs:label&gt;Cultural Property&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- https://w3id.org/arco/ontology/context-description/Interpretation --&gt;
+
+    &lt;owl:Class rdf:about="https://w3id.org/arco/ontology/context-description/Interpretation"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/&gt;
+        &lt;rdfs:comment&gt;This class represents a situation in which pieces of information related to an object (e.g.: a cultural property) are detected and recorded by an agent, based on a specific source or motivation (e.g.:the authorship attribution, commission, etc.)
+
+In RICO, an interpretation is the result of applying the interpretation criterion to a state of affairs (the tangible cultural object). As such, the interpretation is the resulting attribution of meaning to an object during an interpretative event.&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/&gt;
+        &lt;rdfs:label&gt;Interpretation&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+    
+
+
+    &lt;!-- https://w3id.org/arco/ontology/context-description/InterpretationCriterion --&gt;
+
+    &lt;owl:Class rdf:about="https://w3id.org/arco/ontology/context-description/InterpretationCriterion"&gt;
+        &lt;rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/&gt;
+        &lt;rdfs:comment&gt;This class represents the criterion that motivated an interpretation.
+
+In RICO, an interpretation criterion is what defines the interpreted role of a cultural object and the tasks that it fulfills under that role. For example, an interpretation may define a cultural objectâs role as meaning carrier, which includes the task of evoking the sentiment of happiness, the task of evoking the abstract concept of freedom, and the task of evoking the concrete place âParisâ. An interpretation criterion is conceptualized by a Person, and can be expressed as an information object (such as a text) that is realized in some way (like a txt file).&lt;/rdfs:comment&gt;
+        &lt;rdfs:isDefinedBy&gt;https://w3id.org/arco/ontology/context-description&lt;/rdfs:isDefinedBy&gt;
+        &lt;rdfs:label&gt;Interpretation Criterion&lt;/rdfs:label&gt;
+    &lt;/owl:Class&gt;
+&lt;/rdf:RDF&gt;
+
+
+
+&lt;!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi --&gt;
+
+
+</textarea>
+		       <input type="submit" name="buttonRDF" value="Scanner by RDF" onclick="doValidation()"> </p>
+  
+  			<div class="twoSentences">
+  				<div class="twoSentences sentenceLeft">
+  					<input type="checkbox" name="saveOntology" value="saveOntology"> Uncheck this checkbox if you don't want us to keep a copy of your ontology.
+  				</div>
+  	
+				<div class="twoSentences sentenceRight">
+					<input type="submit" class="submitLink" name="buttonLINK" onclick="this.form.action=&quot;advanced.jsp&quot;;" value="Go to advanced evaluation">
+  				</div>
+			</div>
+			<br>
+			
+
+		</form>				
+	</div>	
+</div>
+
+		
+<div id="content">
+<div class="left"> 
+
+<div class="articles">
+<h2>Evaluation results</h2>
+
+			<!-- Los parámetros que le pasa el cliente en la petición se
+			obtienen del objeto implícito request -->
+			
+					
+					<p>It is obvious that not all the pitfalls are equally important; their impact in the ontology 
+					will depend on multiple factors. For this reason, each pitfall has an importance level 
+					attached indicating how important it is. We have identified three levels:
+					
+					</p><ul>
+						<li><strong>Critical <img src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/critical.png" width="11" height="11" alt="Critical"> :</strong> It is crucial to correct the pitfall. Otherwise, it could affect the 
+						ontology consistency, reasoning, applicability, etc.
+						</li>
+						<li><strong>Important  <img src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/important.png" width="11" height="11" alt="Important"> :</strong> Though not critical for ontology function, it is important to correct 
+						this type of pitfall.
+						</li>
+						<li><strong>Minor  <img src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/minor.png" width="11" height="11" alt="Minor"> :</strong> It is not really a problem, but by correcting it we will 
+						make the ontology nicer.
+						</li>
+					</ul>
+					
+					<p></p>
+					
+					
+					
+					<div class="accordion">
+					
+		
+						<p class="switch"><a href="http://oops.linkeddata.es/response.jsp#" class="">[Expand All]</a>&nbsp;|&nbsp;<a href="http://oops.linkeddata.es/response.jsp#" class="open">[Collapse All]</a></p><h3 class="active"><a style="display:block" href="http://oops.linkeddata.es/response.jsp#" title="Expand/Collapse"><span>      Results for P30: Equivalent classes not explicitly declared.
+</span> <span style="float: right; ">
+						
+						1 case
+ | Important <img src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/important.png" width="11" height="11" alt="Important"></span> </a></h3>
+							<p class="collapse shown" style="display: none;">
+							This pitfall consists in missing the definition of equivalent classes (owl:equivalentClass) in case of duplicated concepts. When an ontology reuses terms from other ontologies, classes that have the same meaning should be defined as equivalent in order to benefit the interoperability between both ontologies.	
+<br>
+
+									<br>
+									 
+									• The following classes might be equivalent:
+									
+									<br>
+ › <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation" target="_blank"> http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation</a>, <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place" target="_blank"> http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place</a>
+										<br>
+										</p>
+		
+						<h3 class="active"><a style="display:block" href="http://oops.linkeddata.es/response.jsp#" title="Expand/Collapse"><span>      Results for P41: No license declared.
+</span> <span style="float: right; ">
+						
+						ontology*
+ | Important <img src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/important.png" width="11" height="11" alt="Important"></span> </a></h3>
+							<p class="collapse" style="display: none;">
+							The ontology metadata omits information about the license that applies to the ontology.	
+<br>
+
+								<br>
+								*This pitfall applies to the ontology in general instead of specific elements.
+							</p></div>
+					
+					
+
+					<br>
+					
+	<p>According to the highest importance level of pitfall found in your ontology
+		the conformace bagde suggested is "Important pitfalls" (see below).
+		You can use the following HTML code to insert the badge within your ontology documentation:</p>
+		<br>
+	<div><a href="http://oops.linkeddata.es/"><img src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/oops_important.png" alt="Important pitfalls were found" height="69.6" width="100"></a>
+          				
+	<span style="float: right; "><pre>&lt;p&gt;
+&lt;a href="http://oops.linkeddata.es"&gt;&lt;img
+	src="http://oops.linkeddata.es/resource/image/oops_important.png"
+	alt="Important pitfalls were found" height="69.6" width="100" /&gt;&lt;/a&gt;
+&lt;/p&gt;</pre></span></div>
+	
+					<br><br>
+					
+					<p><a name="references"></a>References:</p>
+
+					<ul>
+						<li>
+						[1]	Aguado-De Cea, G., Montiel-Ponsoda, E., Poveda-Villalón, M., and Giraldo-Pasmin, O.X. (2015). Lexicalizing Ontologies: The issues behind the labels. In Multimodal communication in the 21st century: Professional and academic challenges. 33rd Conference of the Spanish Association of Applied Linguistics (AESLA), XXXIII AESLA.
+						</li>
+						<li>
+						[2]	Noy, N. F., McGuinness, D. L., et al. (2001). Ontology development 101: A guide to creating your first ontology.
+						</li>
+						<li>
+						[3]	Gómez-Pérez, A. (1999). Evaluation of Taxonomic Knowledge in Ontologies and Knowledge Bases. Proceedings of the Banff Knowledge Acquisition for Knowledge-Based Systems Workshop. Alberta, Canada.
+						</li>
+						<li>
+						[4]	Montiel-Ponsoda, E., Vila Suero, D., Villazón-Terrazas, B., Dunsire, G., Escolano Rodríguez, E., Gómez-Pérez, A. (2011). Style guidelines for naming and labeling ontologies in the multilingual web.
+						</li>
+						<li>
+						[5]	Vrandecic, D. (2010). Ontology Evaluation. PhD thesis.
+						</li>
+						<li>
+						[6]	Gómez-Pérez, A. (2004). Ontology evaluation. In Handbook on ontologies, pages 251-273. Springer.
+						</li>
+						<li>
+						[7]	Rector, A., Drummond, N., Horridge, M., Rogers, J., Knublauch, H., Stevens, R., Wang, H., and Wroe, C. (2004). Owl pizzas: Practical experience of teaching owl-dl: Common errors &amp; common patterns. In Engineering Knowledge in the Age of the Semantic Web, pages 63-81. Springer.
+						</li>
+						<li>
+						[8]	Hogan, A., Harth, A., Passant, A., Decker, S., and Polleres, A. (2010). Weaving the pedantic web. In Proceedings of the WWW2010 Workshop on Linked Data on the Web, LDOW 2010, Raleigh, USA, April 27, 2010.
+						</li>
+						<li>
+						[9]	Archer, P., Goedertier, S., and Loutas, N. (2012). D7. 1.3-study on persistent URIs, with identification of best practices and recommendations on the topic for the Mss and the EC. PwC EU Services.
+						</li>
+						<li>
+						[10] Bernes-Lee Tim. (2006). “Linked Data - Design issues”. http://www.w3.org/DesignIssues/LinkedData.html
+						</li>
+						<li>
+						[11] Heath, T. and Bizer, C. (2011). Linked Data: Evolving the Web into a Global Data Space. Morgan &amp; Claypool, 1st edition.
+						</li>
+						<li>
+						[12] Vatant, B. (2012). Is your linked data vocabulary 5-star?. http://bvatant.blogspot.fr/2012/02/is-your-linked-data-vocabulary-5-star_9588.html
+						</li>
+					</ul>
+	<br>
+
+
+<h3>How to cite OOPS!</h3>
+<p>Poveda-Villalón, María, Asunción Gómez-Pérez, and Mari Carmen Suárez-Figueroa. 
+"OOPS!(Ontology Pitfall Scanner!): An on-line tool for ontology evaluation." 
+International Journal on Semantic Web and Information Systems (IJSWIS) 10.2 (2014): 7-34.</p>
+
+<br>
+
+<p>BibTex:</p>
+
+<br>
+<pre>@article{poveda2014oops,
+ title={{OOPS! (OntOlogy Pitfall Scanner!): An On-line Tool for Ontology Evaluation}},
+ author={Poveda-Villal{\'o}n, Mar{\'i}a and G{\'o}mez-P{\'e}rez, Asunci{\'o}n and Su{\'a}rez-Figueroa, Mari Carmen},
+ journal={International Journal on Semantic Web and Information Systems (IJSWIS)},
+ volume={10},
+ number={2},
+ pages={7--34},
+ year={2014},
+ publisher={IGI Global}
+}
+</pre>
+<br>
+
+	
+<p>
+ Please, help us making OOPS! better. <a href="http://oops.linkeddata.es/form.jsp"><strong>Feedback</strong></a>
+ is more than welcome! 
+ 
+ <br>
+ In addition, you can also <a href="http://oops.linkeddata.es/submissions.jsp"><strong>suggest new pitfalls</strong></a>
+  so that they can be detected in future evaluations.</p> 
+ 
+</div>
+
+</div>
+
+<div class="right">  
+
+<h2>Want to help?</h2>
+<ul>
+	<li><a href="http://oops.linkeddata.es/submissions.jsp">Suggest new pitfalls</a></li> 
+	<li><a href="http://oops.linkeddata.es/form.jsp">Provide feedback</a></li> 
+</ul>
+
+<h2>Documentation:</h2>
+<ul>
+	<li><a href="http://oops.linkeddata.es/catalogue.jsp">Pitfall catalogue</a></li> 
+	<li><a href="http://oops.linkeddata.es/OOPSUserGuidev1.pdf" target="_blank">User guide</a></li> 
+	<li><a href="http://oa.upm.es/10195/1/OOPS_technical_report_v0.2.pdf" target="_blank">Technical report</a></li> 
+</ul>
+
+<h2>Related papers:</h2>
+<ul>	
+	<li><a href="http://www.igi-global.com/article/oops-ontology-pitfall-scanner/116450" target="_blank">IJSWIS 2014</a></li> 
+	<li><a href="http://www.springerlink.com/content/nn684334014507n4/" target="_blank">EKAW 2012</a></li> 
+	<li><a href="http://2012.eswc-conferences.org/sites/default/files/eswc2012_submission_322.pdf" target="_blank">ESWC 2012 Demo</a></li> 
+	<li><a href="http://oa.upm.es/5413/1/A_DOUBLE_CLASSIFICATION_OF_COMMON_PITFALLS_IN_ONTOLOGIES.pdf" target="_blank">Ontoqual 2010</a></li> 
+	<li><a href="http://oa.upm.es/6115/1/CAEPIA09_-_Common_Pitfalls_in_Ontology_Development_-_final_version_fixed.pdf" target="_blank">CAEPIA 2009</a></li> 
+</ul>
+
+<h2>Web services:</h2>
+<ul>	
+<li><a href="http://oops.linkeddata.es/webservice.html">REST Web Service</a></li> 
+</ul>
+
+
+<h2>Developed by:</h2>
+<a href="http://www.oeg-upm.net/" target="_blank"><img src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/logoOEG.png" alt="OEG logo" style="margin-left:3%;margin-right:5%;width:68%;"></a>
+
+<br>
+<br>
+
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 127px; height: 20px;" title="Twitter Follow Button" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/follow_button.2a008290075125adde2d7b849b06a0bb.en.html" data-screen-name="OOPSoeg"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</div>
+<div style="clear: both;"> </div>
+
+</div>
+
+
+<div id="footer">
+<p><a href="http://purl.org/net/mpoveda" target="_blank">María Poveda</a></p>
+<p>Contact email: oops(at)delicias.dia.fi.upm.es. Latest revision April 2020</p>
+<a href="http://www.templatesold.com/" target="_blank">Website Templates</a> by <a href="http://www.free-css-templates.com/" target="_blank">Free CSS Templates</a>
+</div>
+</div>
+    
+	<script type="text/javascript" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/jquery.js"></script>
+	<script type="text/javascript" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/accordion.js"></script>
+	<script type="text/javascript" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/expandCollapse.js"></script>
+	<script type="text/javascript" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/expand.js"></script>
+	<script type="text/javascript" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/scripts.js"></script>
+	<script type="text/javascript" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/loading.js"></script>
+	<script type="text/javascript" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/inputs.js"></script>	
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56720864-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./OOPS! - OntOlogy Pitfall Scanner! - Results_files/widget_iframe.2a008290075125adde2d7b849b06a0bb.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

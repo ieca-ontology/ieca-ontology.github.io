@@ -1,0 +1,1001 @@
+<https://rico-ontology.github.io/rico_dul.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://rico-ontology.github.io/rico_dul.owl> <http://www.w3.org/2002/07/owl#versionIRI> <https://rico-ontology.github.io/rico_dul.owl> .
+<https://rico-ontology.github.io/rico_dul.owl> <http://purl.org/dc/elements/1.1/creator> "Delfina Sol Pandiani" .
+<https://rico-ontology.github.io/rico_dul.owl> <http://purl.org/dc/terms/title> "RICO Ontology - Related Interpretations of Cultural Objects" .
+<https://rico-ontology.github.io/rico_dul.owl> <http://purl.org/dc/terms/title> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)." .
+<https://rico-ontology.github.io/rico_dul.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "RICO Ontology is based on DOLCE DnS Ultralite, and was specifically developed for the formal representation of information surrounding the interpretations of cultural objects." .
+<https://rico-ontology.github.io/rico_dul.owl> <http://www.w3.org/2000/01/rdf-schema#label> "RICO (Related Interpretations of Cultural Objects)" .
+<https://rico-ontology.github.io/rico_dul.owl> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#versionInfo> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://rico-ontology.github.io/rico_dul.owl#Rights
+<https://rico-ontology.github.io/rico_dul.owl#Rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#dateTime
+<http://www.w3.org/2001/XMLSchema#dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes> <http://www.w3.org/2000/01/rdf-schema#comment> "An Agent assumes a (conceptualized) Description when she uses it to create a (mental) model or to draw inferences in some reasoning task. This is not the same as 'belief' in epistemic terms. Belief is about a Situation, considered as true, plausible, etc., while assumption is about assuming a Description or Concept." .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl" .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#assumes> <http://www.w3.org/2000/01/rdf-schema#label> "assumes" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes> <http://www.w3.org/2000/01/rdf-schema#comment> "The conceptualization of a Situation that is only indirectly perceived and processed by an Agent" .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl" .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#believes> <http://www.w3.org/2000/01/rdf-schema#label> "believes" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An Agent assumes a (conceptualized) Description when she uses it to create a (mental) model or to draw inferences in some reasoning task." .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl" .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isAssumedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is assumed by" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between an Agent and the Situation that she believes to be true or plausible." .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl" .
+<http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#isBelievedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is believed by" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA catch-all object property, useful for alignment and querying purposes.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "associated with" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a Concept and an Entity, e.g. the Role 'student' classifies a Person 'John'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#label> "classifica"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#label> "classifies"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation stating that an Agent is internally representing a SocialObject: situations, descriptions, concepts, etc. E.g., 'John believes in the conspiracy theory'; 'Niels Bohr created the solar-system metaphor for the atomic theory'; 'Jacques assumes all swans are white'; 'the task force members share the attack plan'. Conceptualizations can be distinguished into different forms, primarily based on the type of SocialObject that is conceptualized. Descriptions and concepts can be 'assumed', situations can be 'believed' or 'known', plans can be 'adopted', etc. (see ontology: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> <http://www.w3.org/2000/01/rdf-schema#label> "conceptualizes"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes> <http://www.w3.org/2000/01/rdf-schema#label> "concettualizza"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a Description and a Concept, e.g. a Workflow for a governmental Organization defines the Role 'officer', or 'the Italian Traffic Law defines the role Vehicle'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/2000/01/rdf-schema#label> "defines"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/2000/01/rdf-schema#label> "definisce"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a description and a role, e.g. the recipe for a cake defines the role 'ingredient'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole> <http://www.w3.org/2000/01/rdf-schema#label> "defines role"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole> <http://www.w3.org/2000/01/rdf-schema#label> "definisce il ruolo"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a description and a task, e.g. the recipe for a cake defines the task 'boil'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask> <http://www.w3.org/2000/01/rdf-schema#label> "defines task"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesTask> <http://www.w3.org/2000/01/rdf-schema#label> "definisce il task"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThe relation between a Description and an Entity : a Description gives a unity to a Collection of parts (the components), or constituents, by assigning a Role to each of them in the context of a whole Object (the system). A same Entity can be given different descriptions, for example, an old cradle can be given a unifying Description based on the original aesthetic design, the functionality it was built for, or a new aesthetic functionality in which it can be used as a flower pot.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/2000/01/rdf-schema#label> "describes"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/2000/01/rdf-schema#label> "descrive"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between an InformationObject and a 'meaning', generalized here as a 'SocialObject'. For example: 'A Beehive is a structure in which bees are kept, typically in the form of a dome or box.' (Oxford dictionary)'; 'the term Beehive expresses the concept Beehive in my apiculture ontology'. The intuition for 'meaning' is intended to be very broad. A separate, large comment is included for those who want to investigate more on what kind of meaning can be represented in what form.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThis is a large comment field for those who want to investigate the different uses of the 'expresses' relation for modeling different approaches to meaning characterization and modeling. For example, in all these cases, some aspect of meaning is involved: - Beehive means \"a structure in which bees are kept, typically in the form of a dome or box.\" (Oxford dictionary) - 'Beehive' is a synonym in noun synset 09218159 \"beehive|hive\" (WordNet) - 'the term Beehive can be interpreted as the fact of 'being a beehive', i.e. a relation that holds for concepts such as Bee, Honey, Hosting, etc.' - 'the text of Italian apiculture regulation expresses a rule by which beehives should be kept at least one kilometer away from inhabited areas' - 'the term Beehive expresses the concept Beehive' - ''Beehive' for apiculturists does not express the same meaning as for, say, fishermen' - 'Your meaning of 'Beautiful' does not seem to fit mine' - ''Beehive' is formally interpreted as the set of all beehives' - 'from the term 'Beehive', we can build a vector space of statistically significant cooccurring terms in the documents that contain it' - the lexeme 'Belly' expresses the role 'Body_Part' in the frame 'ObservableBodyParts' (FrameNet) As the examples suggest, the 'meaning of meaning' is dependent on the background approach/theory that one assumes. One can hardly make a summary of the too many approaches and theories of meaning, therefore this relation is maybe the most controversial and difficult to explain; normally, in such cases it would be better to give up formalizing. However, the usefulness of having a 'semantic abstraction' in modeling information objects is so high (e.g. for the semantic web, interoperability, reengineering, etc.), that we accept this challenging task, although without taking any particular position in the debate. We provide here some examples, which we want to generalize upon when using the 'expresses' relation to model semantic aspects of social reality. In the most common approach, lexicographers that write dictionaries, glossaries, etc. assume that the meaning of a term is a paraphrase (or 'gloss', or 'definition'). Another approach is provided by concept schemes like thesauri and lexicons, which assume that the meaning of a term is a 'concept', encoded as a 'lemma', 'synset', or 'descriptor'. Still another approach is that of psychologists and cognitive scientists, which often assume that the meaning of an information object is a concept encoded in the mind or cognitive system of an agent. A radically different approach is taken by social scientists and semioticians, who usually assume that meanings of an information object are spread across the communication practices in which members of a community use that object. Another approach that tackles the distributed nature of meaning is assumed by geometrical models of semantics, which assume that the meaning of an InformationObject (e.g. a word) results from the set of informational contexts (e.g. within texts) in which that object is used similarly. The logical approach to meaning is still different, since it assumes that the meaning of e.g. a term is equivalent to the set of individuals that the term can be applied to; for example, the meaning of 'Ali' is e.g. an individual person called Ali, the meaning of 'Airplane' is e.g. the set of airplanes, etc. Finally, an approach taken by structuralist linguistics and frame semantics is that a meaning is the relational context in which an information object can be applied; for example, a meaning of 'Airplane' is situated e.g. in the context ('frame') of passenger airline flights. These different approaches are not necessarily conflicting, and they mostly talk about different aspects of so-called 'semantics'. They can be summarized and modelled within DOLCE-Ultralite as follows (notice that such list is far from exhaustive): (1) Informal meaning (as for linguistic or commonsense semantics: a distinction is assumed between (informal) meaning and reference; see isAbout for an alternative pattern on reference) - Paraphrase meaning (as for lexicographic semantics). Here it is modelled as the expresses relation between instances of InformationObject and different instances of InformationObject that act as 'paraphrases' - Conceptual meaning (as for 'concept scheme' semantics). Here it is modelled as the expresses relation between instances of InformationObject and instances of Concept - Relational meaning (as for frame semantics). Here it is modelled as the expresses relation between instances of InformationObject and instances of Description - Cognitive meaning (as for 'psychological' semantics). Here it is modelled as the expresses relation between any instance of InformationObject and any different instance of InformationObject that isRealizedBy a mental, cognitive or neural state (depending on which theory of mind is assumed). Such states can be considered here as instances of Process (occurring in the mind, cognitive system, or neural system of an agent) - Cultural meaning (as for 'social science' semantics). Here it is modelled as the expresses relation between instances of InformationObject and instances of SocialObject (institutions, cultural paradigms, norms, social practices, etc.) - Distributional meaning (as for geometrical models of meaning). Here it is modelled as the expresses relation between any instance of InformationObject and any different instance of InformationObject that isFormallyRepresentedIn some (geometrical) Region (e.g. a vector space) (2) Formal meaning (as for logic and formal semantics: no distinction is assumed between informal meaning and reference, therefore between 'expresses' and 'isAbout', which can be used interchangeably) - Object-level formal meaning (as in the traditional first-order logic semantics). Here it is modelled as the expresses relation between an instance of InformationObject and an instance of Collection that isGroundingFor (in most cases) a Set; isGroundingFor is defined in the ontology: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl - Modal formal meaning (as in possible-world semantics). Here it is modelled as the expresses relation between an instance of InformationObject and an instance of Collection that isGroundingFor a Set, and which isPartOf some different instance of Collection that isGroundingFor a PossibleWorld This is only a first step to provide a framework, in which one can model different aspects of meaning. A more developed ontology should approach the problem of integrating the different uses of 'expresses', so that different theories, resources, methods can interoperate.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/2000/01/rdf-schema#label> "esprime"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses> <http://www.w3.org/2000/01/rdf-schema#label> "expresses"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA generic, relative spatial location, holding between any entities. E.g. 'the cat is on the mat', 'Omar is in Samarcanda', 'the wound is close to the femural artery'. For 'absolute' locations, see SpaceRegion\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "ha localizzazione"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between an object and a process, e.g. 'John took part in the discussion', 'a large mass of snow fell during the avalanche', or 'a cook, some sugar, flour, etc. are all present in the cooking of a cake'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "ha come partecipante"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "has participant"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between entities and qualities, e.g. 'Dmitri's skin is yellowish'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#label> "ha qualità"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#label> "has quality"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between entities and regions, e.g. 'the number of wheels of that truck is 12', 'the time of the experiment is August 9th, 2004', 'the whale has been localized at 34 degrees E, 20 degrees S'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#label> "ha attributo"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#label> "has region"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between an object and a role, e.g. the person 'John' has role 'student'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "ha ruolo"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "has role"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between entities and situations, e.g. 'this morning I've prepared my coffee with a new fantastic Arabica', i.e.: (an amount of) a new fantastic Arabica hasSetting the preparation of my coffee this morning.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/2000/01/rdf-schema#label> "has setting"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/2000/01/rdf-schema#label> "è nel contesto di"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between roles and tasks, e.g. 'students have the duty of giving exams' (i.e. the Role 'student' hasTask the Task 'giving exams').\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask> <http://www.w3.org/2000/01/rdf-schema#label> "ha come obiettivo"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTask> <http://www.w3.org/2000/01/rdf-schema#label> "has task"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThe generic relation between events and time intervals.\n"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "ha intervallo temporale"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "has time interval"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between situations and persons, e.g. 'this morning I've prepared my coffee and had my fingers burnt' (i.e.: the preparation of my coffee this morning included me).\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> <http://www.w3.org/2000/01/rdf-schema#label> "include l'agente"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent> <http://www.w3.org/2000/01/rdf-schema#label> "includes agent"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between situations and events, e.g. 'this morning I've prepared my coffee and had my fingers burnt' (i.e.: the preparation of my coffee this morning included a burning of my fingers).\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent> <http://www.w3.org/2000/01/rdf-schema#label> "include l'evento"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent> <http://www.w3.org/2000/01/rdf-schema#label> "includes event"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between situations and objects, e.g. 'this morning I've prepared my coffee and had my fingers burnt' (i.e.: the preparation of my coffee this morning included me).\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> <http://www.w3.org/2000/01/rdf-schema#label> "include l'oggetto"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject> <http://www.w3.org/2000/01/rdf-schema#label> "includes object"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between situations and time intervals, e.g. 'this morning I've prepared my coffee and had my fingers burnt' (i.e.: preparing my coffee was held this morning). A data value attached to the time interval typically complements this modelling pattern.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime> <http://www.w3.org/2000/01/rdf-schema#label> "include tempo"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime> <http://www.w3.org/2000/01/rdf-schema#label> "includes time"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "Agent participation." .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent> <http://www.w3.org/2000/01/rdf-schema#label> "coinvolge agente"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent> <http://www.w3.org/2000/01/rdf-schema#label> "involves agent"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is agent included in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è un agente nel contesto di"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Agent participation." .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is agent involved in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è un agente coinvolto in"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a Concept and an Entity, e.g. 'John is considered a typical rude man'; your last concert constitutes the achievement of a lifetime; '20-year-old means she's mature enough'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is classified by"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è classificato da"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA more generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is concept used in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è un concetto usato in"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation stating that an Agent is internally representing a Description . E.g., 'John believes in the conspiracy theory'; 'Niels Bohr created a solar-system metaphor for his atomic theory'; 'Jacques assumes all swans are white'; 'the task force shares the attack plan'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is conceptualized by"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è concettualizzato da"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a Description and a Concept, e.g. a Workflow for a governmental Organization defines the Role 'officer', or 'the Italian Traffic Law defines the role Vehicle'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is defined in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è definito in"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThe relation between an Entity and a Description: a Description gives a unity to a Collection of parts (the components), or constituents, by assigning a Role to each of them in the context of a whole Object (the system). A same Entity can be given different descriptions, for example, an old cradle can be given a unifying Description based on the original aesthetic design, the functionality it was built for, or a new aesthetic functionality in which it can be used as a flower pot.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is described by"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è descritto da"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is event included in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è un evento nel contesto di"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a dul:SocialObject (the 'meaning') and a dul:InformationObject (the 'expression'). For example: 'A Beehive is a structure in which bees are kept, typically in the form of a dome or box.' (Oxford dictionary)'; 'the term Beehive expresses the concept Beehive in my apiculture ontology'. The intuition for 'meaning' is intended to be very broad. A separate, large comment is included in the encoding of 'expresses', for those who want to investigate more on what kind of meaning can be represented in what form.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is expressed by"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è espresso da"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA generic, relative localization, holding between any entities. E.g. 'Rome is the seat of the Pope', 'the liver is the location of the tumor'. For 'absolute' locations, see SpaceRegion\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is location of"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "è una localizzazione di"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is object included in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è un oggetto nel contesto di"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between an object and a process, e.g. 'John took part in the discussion', 'a large mass of snow fell during the avalanche', or 'a cook, some sugar, flour, etc. are all present in the cooking of a cake'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#label> "is participant in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#label> "è un partecipante a"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between entities and qualities, e.g. 'Dmitri's skin is yellowish'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#label> "is quality of"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#label> "è una qualità di"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between an information realization and an information object, e.g. the paper copy of the Italian Constitution realizes the text of the Constitution.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is realized by"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è realizzato da"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between entities and regions, e.g. 'the color of my car is red'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#label> "is region for"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#label> "è una regione di"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAny relation between concepts, e.g. superordinated, conceptual parthood, having a parameter, having a task, superordination, etc.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#label> "is related to concept"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#label> "è associato al concetto"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a description and a role, e.g. the role 'Ingredient' is defined in the recipe for a cake.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is role defined in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleDefinedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è un ruolo definito in"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between an object and a role, e.g. 'student' is the role of 'John'.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#label> "is role of"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#label> "è un ruolo di"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is satisfied by"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è soddisfatta da"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between situations and entities, e.g. 'this morning I've prepared my coffee with a new fantastic Arabica', i.e.: the preparation of my coffee this morning is the setting for (an amount of) a new fantastic Arabica.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#label> "include"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#label> "is setting for"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between a description and a task, e.g. the task 'boil' is defined in a recipe for a cake.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is task defined in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è un task definito in"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between roles and tasks, e.g. 'students have the duty of giving exams' (i.e. the Role 'student' hasTask the Task 'giving exams').\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> <http://www.w3.org/2000/01/rdf-schema#label> "is task of"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> <http://www.w3.org/2000/01/rdf-schema#label> "è un obiettivo per"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is time included in"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è un tempo nel contesto di"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThe generic relation between time intervals and events.\n"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf> <http://www.w3.org/2000/01/rdf-schema#label> "intervallo temporale di"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf> <http://www.w3.org/2000/01/rdf-schema#label> "is time interval of"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA relation between an information realization and an information object, e.g. the paper copy of the Italian Constitution realizes the text of the Constitution.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> <http://www.w3.org/2000/01/rdf-schema#label> "realizes"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> <http://www.w3.org/2000/01/rdf-schema#label> "realizza"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description. This last condition cannot be encoded for object properties in OWL.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> <http://www.w3.org/2000/01/rdf-schema#label> "usa il concetto"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept> <http://www.w3.org/2000/01/rdf-schema#label> "uses concept"@en .
+# 
+# https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask
+<https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask> <http://www.w3.org/2002/07/owl#inverseOf> <https://rico-ontology.github.io/rico_dul.owl#taskEvokes> .
+<https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask> <http://www.w3.org/2000/01/rdf-schema#range> <https://rico-ontology.github.io/rico_dul.owl#Evoker> .
+<https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Concept and the Task that evokes it." .
+<https://rico-ontology.github.io/rico_dul.owl#isEvokedbyTask> <http://www.w3.org/2000/01/rdf-schema#comment> "is evoked by task" .
+# 
+# https://rico-ontology.github.io/rico_dul.owl#taskEvokes
+<https://rico-ontology.github.io/rico_dul.owl#taskEvokes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://rico-ontology.github.io/rico_dul.owl#taskEvokes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> .
+<https://rico-ontology.github.io/rico_dul.owl#taskEvokes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://rico-ontology.github.io/rico_dul.owl#Evoker> .
+<https://rico-ontology.github.io/rico_dul.owl#taskEvokes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<https://rico-ontology.github.io/rico_dul.owl#taskEvokes> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between an Evoker Task and a Concept (such as a sentiment, a high level abstract concept, etc.)." .
+<https://rico-ontology.github.io/rico_dul.owl#taskEvokes> <http://www.w3.org/2000/01/rdf-schema#label> "task evokes" .
+# 
+# https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion
+<https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> .
+<https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/arco/ontology/context-description/Interpretation> .
+<https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/arco/ontology/context-description/InterpretationCriterion> .
+<https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an authorship, dating, commission, or other interpretation situations, to the reason or criterion which led to that interpretation." .
+<https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description> .
+<https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "has interpretation criterion" .
+# 
+# https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf
+<https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> .
+<https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/arco/ontology/context-description/InterpretationCriterion> .
+<https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/arco/ontology/context-description/Interpretation> .
+<https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an interpretation criterion to the interpretation that was based on that criterion." .
+<https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description> .
+<https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is interpretation criterion of" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA datatype property that encodes values from a datatype for an Entity. There are several ways to encode values in DOLCE (Ultralite): 1) Directly assert an xsd:_ value to an Entity by using hasDataValue 2) Assert a Region for an Entity by using hasRegion, and then assert an xsd:_ value to that Region, by using hasRegionDataValue 3) Assert a Quality for an Entity by using hasQuality, then assert a Region for that Quality, and assert an xsd:_ value to that Region, by using hasRegionDataValue 4) When the value is required, but not directly observed, assert a Parameter for an xsd:_ value by using hasParameterDataValue, and then associate the Parameter to an Entity by using isConstraintFor 5) When the value is required, but not directly observed, you can also assert a Parameter for a Region by using parametrizes, and then assert an xsd:_ value to that Region, by using hasRegionDataValue The five approaches obey different requirements. For example, a simple value can be easily asserted by using pattern (1), but if one needs to assert an interval between two values, a Region should be introduced to materialize that interval, as pattern (2) suggests. Furthermore, if one needs to distinguish the individual Quality of a value, e.g. the particular nature of the density of a substance, pattern (3) can be used. Patterns (4) and (5) should be used instead when a constraint or a selection is modeled, independently from the actual observation of values in the real world.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "ha valore"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has data value"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA datatype property that encodes values from xsd:dateTime for an Event; a same Event can have more than one xsd:dateTime value: begin date, end date, date at which the interval holds, etc.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#label> "evento ha data"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#label> "has event date"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA datatype property that encodes values from xsd:dateTime for a TimeInterval; a same TimeInterval can have more than one xsd:dateTime value: begin date, end date, date at which the interval holds, etc.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#label> "has interval date"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#label> "intervallo ha data"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA datatype property that encodes values for a Region, e.g. a float for the Region Height.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has region data value"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "regione ha valore"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAny Entity that cannot be located in space-time. E.g. mathematical entities: formal semantics elements, regions within dimensional spaces, etc.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract> <http://www.w3.org/2000/01/rdf-schema#label> "Abstract"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract> <http://www.w3.org/2000/01/rdf-schema#label> "Astratto"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAn Event with at least one Agent that isParticipantIn it, and that executes a Task that typically isDefinedIn a Plan, Workflow, Project, etc.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Azione"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAdditional comment: a computational agent can be considered as a PhysicalAgent that realizes a certain class of algorithms (that can be considered as instances of InformationObject) that allow to obtain some behaviors that are considered typical of agents in general. For an ontology of computational objects based on DOLCE see e.g. http://www.loa-cnr.it/COS/COS.owl, and http://www.loa-cnr.it/KCO/KCO.owl.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAny agentive Object , either physical (e.g. a whale, a robot, an oak), or social (e.g. a corporation, an institution, a community).\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agente"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA Concept is a SocialObject, and isDefinedIn some Description; once defined, a Concept can be used in other Description(s). If a Concept isDefinedIn exactly one Description, see the LocalConcept class. The classifies relation relates Concept(s) to Entity(s) at some TimeInterval\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concetto"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA Description is a SocialObject that represents a conceptualization. It can be thought also as a 'descriptive context' that uses or defines concepts in order to create a view on a 'relational context' (cf. Situation) out of a set of data or observations. For example, a Plan is a Description of some actions to be executed by agents in a certain way, with certain parameters; a Diagnosis is a Description that provides an interpretation for a set of observed entities, etc.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> <http://www.w3.org/2000/01/rdf-schema#label> "Descrizione"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAnything: real, possible, or imaginary, which some modeller wants to talk about for some purpose.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entità"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Any physical, social, or mental process, event, or state." .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Evento"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA Concept that classifies an Event . An event type describes how an Event should be interpreted, executed, expected, seen, etc., according to the Description that the EventType isDefinedIn (or used in)\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType> <http://www.w3.org/2000/01/rdf-schema#label> "Event Type"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo di evento"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA piece of information, be it concretely realized or not.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Information Entity" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA piece of information, such as a musical composition, a text, a word, a picture, independently from how it is concretely realized.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> <http://www.w3.org/2000/01/rdf-schema#label> "Information Object"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> <http://www.w3.org/2000/01/rdf-schema#label> "Oggetto informativo"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA concrete realization of an InformationObject, e.g. the written document containing the text of a law.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization> <http://www.w3.org/2000/01/rdf-schema#label> "Information Realization"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization> <http://www.w3.org/2000/01/rdf-schema#label> "Informazione concreta"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA person in the physical commonsense intuition: 'have you seen that person walking down the street?'\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Person"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> <http://www.w3.org/2000/01/rdf-schema#label> "Persona fisica"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAny physical, social, or mental object, or a substance. Following DOLCE Full, objects are always participating in some event (at least their own life), and are spatially located.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Object"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Oggetto"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "\nPersons in commonsense intuition, which does not apparently distinguish between either natural or social persons.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Persona {it}" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "\nPhysical value of a physical object, e.g. density, color, etc.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "Caratteristica fisica"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Attribute"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf> .
+_:genid10 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA location, in a very generic sense: a political geographic entity (Roma, Lesotho), a non-material location determined by the presence of other entities (\"the area close to Roma\"), pivot events or signs (\"the area where the helicopter fell\"), complements of other entities (\"the area under the table\"), etc. In this generic sense, a Place is an \"approximate\" location. For an \"absolute\" location, see the class SpaceRegion\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Luogo"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> <http://www.w3.org/2000/01/rdf-schema#comment> "rdfs:comment \"Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like, or the specific light of a place at a certain time, are examples of Quality, while the encoding of a Quality into e.g. a PhysicalAttribute should be modeled as a Region. \nFrom the design viewpoint, the Quality-Region distinction is useful only when individual aspects of an Entity are considered in a domain of discourse. \nFor example, in an automotive context, it would be irrelevant to consider the aspects of car windows for a specific car, unless the factory wants to check a specific window against design parameters (anomaly detection). \nOn the other hand, in an antiques context, the individual aspects for a specific piece of furniture are a major focus of attention, and may constitute the actual added value, because the design parameters for old furniture are often not fixed, and may not be viewed as 'anomalies'.\"^^xsd:string" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> <http://www.w3.org/2000/01/rdf-schema#label> "Quality" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAny region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. Regions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Regione"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "A Concept that classifies an Object" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Ruolo"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA view, consistent with ('satisfying') a Description, on a set of entities. It can also be seen as a 'relational context' created by an observer on the basis of a 'frame' (i.e. a Description). For example, a PlanExecution is a context including some actions executed by agents according to certain parameters and expected tasks to be achieved from a Plan; a DiagnosedSituation is a context of observed entities that is interpreted on the basis of a Diagnosis, etc. Situation is also able to represent reified n-ary relations, where isSettingFor is the top-level relation for all binary projections of the n-ary relation. If used in a transformation pattern for n-ary relations, the designer should take care of creating only one subclass of Situation for each n-ary relation, otherwise the 'identification constraint' (Calvanese et al., IJCAI 2001) could be violated.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#label> "Situation"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#label> "Situazione"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAny Object that exists only within some communication Event, in which at least one PhysicalObject participates in. In other words, all objects that have been or are created in the process of social communication: for the sake of communication (InformationObject), for incorporating new individuals (SocialAgent, Place), for contextualizing existing entities (Situation), for collecting existing entities (Collection), or for describing existing entities (Description, Concept). Being dependent on communication, all social objects need to be expressed by some information object (information object are self-expressing).\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/2000/01/rdf-schema#label> "Oggetto sociale"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/2000/01/rdf-schema#label> "Social Object"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAny Region in a dimensional space that is used to localize an Entity ; i.e., it is not used to represent some characteristic (e.g. it excludes time intervals, colors, size values, judgment values, etc.). Differently from a Place , a space region has a specific dimensional space.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Regione di spazio"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Space Region"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskDefinedIn> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTaskOf> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAn EventType that classifies an Action to be executed. For example, reaching a destination is a task that can be executed by performing certain actions, e.g. driving a car, buying a train ticket, etc. The actions to execute a task can also be organized according to a Plan that is not the same as the one that defines the task (if any). For example, reaching a destination could be defined by a plan to get on holidays, while the plan to execute the task can consist of putting some travels into a sequence.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task"@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task"@it .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "\nAny Region in a dimensional space that aims at representing time.\n" .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Intervallo di tempo"@it .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Time Interval"@en .
+# 
+# http://www.w3.org/2002/07/owl#Thing
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://rico-ontology.github.io/rico_dul.owl#Evoker
+<https://rico-ontology.github.io/rico_dul.owl#Evoker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://rico-ontology.github.io/rico_dul.owl#Evoker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task> .
+<https://rico-ontology.github.io/rico_dul.owl#Evoker> <http://www.w3.org/2000/01/rdf-schema#comment> "A special task part of an interpreted role of cultural objects as meaning carriers. Used for cultural objects that in their interpreted role evoke a concept. For example, evoker of a sentiment (such as fear, lust, anger, etc.), of an abstract concept (such as, freedom, love, or justice), or of a concrete concept (tree, house, shoe)." .
+<https://rico-ontology.github.io/rico_dul.owl#Evoker> <http://www.w3.org/2000/01/rdf-schema#label> "Evoker" .
+# 
+# https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject
+<https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+<https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person." .
+<https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Intangible Cultural Object" .
+<https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/arco/ontology/arco/IntangibleCulturalProperty> .
+# 
+# https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter
+<https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of action event in which one person participates as interpreter and one object participates as meaning carrier, and executes tasks as defined in a description (interpretation).\n\nThe definition of this class was deemed necessary as it is central to the domain that RICO aims to formalize. Having this class allows for further specification down the road for the kinds of interpretative encounters that may take place (for example, mediated or unmediated experiences in museums, physical or virtual encounters, etc.)" .
+<https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretative Encounter" .
+# 
+# https://rico-ontology.github.io/rico_dul.owl#InterpretedRole
+<https://rico-ontology.github.io/rico_dul.owl#InterpretedRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://rico-ontology.github.io/rico_dul.owl#InterpretedRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<https://rico-ontology.github.io/rico_dul.owl#InterpretedRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This subclass of the Role class was specifically created to designate roles assigned to (mostly) cultural objects within the interpretative encounter by an interpreter. That is, interpreted roles are roles that are solely defined by the interpretation criterion conceptualized by a Person (eg., \"carrier of meaning\")" .
+<https://rico-ontology.github.io/rico_dul.owl#InterpretedRole> <http://www.w3.org/2000/01/rdf-schema#label> "Interpreted Role" .
+# 
+# https://rico-ontology.github.io/rico_dul.owl#Sentiment
+<https://rico-ontology.github.io/rico_dul.owl#Sentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://rico-ontology.github.io/rico_dul.owl#Sentiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> .
+<https://rico-ontology.github.io/rico_dul.owl#Sentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "Sentiments are concepts such as fear, pain, laughter, happiness, or lust, which may be the object of the evoking task of a cultural object interpreted as a meaning carrier." .
+<https://rico-ontology.github.io/rico_dul.owl#Sentiment> <http://www.w3.org/2000/01/rdf-schema#label> "Sentiment" .
+# 
+# https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject
+<https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+<https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person." .
+<https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Tangible Cultural Object" .
+<https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/arco/ontology/arco/TangibleCulturalProperty> .
+# 
+# https://w3id.org/arco/ontology/arco/CulturalProperty
+<https://w3id.org/arco/ontology/arco/CulturalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/arco/ontology/arco/CulturalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<https://w3id.org/arco/ontology/arco/CulturalProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape.\n\nIn RICO, this class and its descendants are reused to represent the cultural objects that are the objects of interpretation, mainly so that the knowledge bases emerging from its use can be matched to ArCo and other resources in a way that augments the amount of knowledge available of such objects." .
+<https://w3id.org/arco/ontology/arco/CulturalProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://dati.beniculturali.it/lodview-arco-onto/ontology/arco" .
+<https://w3id.org/arco/ontology/arco/CulturalProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Property" .
+# 
+# https://w3id.org/arco/ontology/context-description/Interpretation
+<https://w3id.org/arco/ontology/context-description/Interpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/arco/ontology/context-description/Interpretation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
+<https://w3id.org/arco/ontology/context-description/Interpretation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a situation in which pieces of information related to an object (e.g.: a cultural property) are detected and recorded by an agent, based on a specific source or motivation (e.g.:the authorship attribution, commission, etc.)\n\nIn RICO, an interpretation is the result of applying the interpretation criterion to a state of affairs (the tangible cultural object). As such, the interpretation is the resulting attribution of meaning to an object during an interpretative event." .
+<https://w3id.org/arco/ontology/context-description/Interpretation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description> .
+<https://w3id.org/arco/ontology/context-description/Interpretation> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretation" .
+# 
+# https://w3id.org/arco/ontology/context-description/InterpretationCriterion
+<https://w3id.org/arco/ontology/context-description/InterpretationCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/arco/ontology/context-description/InterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+<https://w3id.org/arco/ontology/context-description/InterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the criterion that motivated an interpretation.\n\nIn RICO, an interpretation criterion is what defines the interpreted role of a cultural object and the tasks that it fulfills under that role. For example, an interpretation may define a cultural object’s role as meaning carrier, which includes the task of evoking the sentiment of happiness, the task of evoking the abstract concept of freedom, and the task of evoking the concrete place “Paris”. An interpretation criterion is conceptualized by a Person, and can be expressed as an information object (such as a text) that is realized in some way (like a txt file)." .
+<https://w3id.org/arco/ontology/context-description/InterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/arco/ontology/context-description" .
+<https://w3id.org/arco/ontology/context-description/InterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretation Criterion" .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
